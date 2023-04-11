@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.61"
+    "vue": "latest",
+    "@vuepress/client": "next",
+    "vuepress": "next"
   }
 }

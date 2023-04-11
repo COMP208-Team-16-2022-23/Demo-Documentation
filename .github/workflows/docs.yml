@@ -21,7 +21,7 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           # choose pnpm version to use
-          version: 7
+          version: latest
           # install deps with pnpm
           run_install: true
 
@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           # choose node.js version to use
-          node-version: 18
+          node-version: latest
           # cache deps for pnpm
           cache: pnpm
 
