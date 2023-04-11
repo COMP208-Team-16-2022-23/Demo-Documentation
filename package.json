@@ -4,14 +4,16 @@
   "description": "COMP208",
   "main": "index.js",
   "scripts": {
-      "docs:dev": "vuepress dev docs",
-      "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "export-pdf": "press-export-pdf export /docs/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vue": "latest",
+    "@condorhero/vuepress-plugin-export-pdf-v2": "latest",
     "@vuepress/client": "next",
+    "vue": "latest",
     "vuepress": "next"
   }
 }
