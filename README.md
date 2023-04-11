@@ -7,9 +7,18 @@
 - Team Submission
 - [Submission Details](https://canvas.liverpool.ac.uk/courses/59720/assignments/219445)
 
-
-
 Please use markdown to write the user manuals.
+
+## How to use
+
+```bash
+git clone https://github.com/COMP208-Team-16-2022-23/Demo-Documentation.git
+cd Demo-Documentation
+npm install
+npm run docs:dev
+```
+
+Then open http://localhost:8080/Demo-Documentation/ in your browser.
 
 ## Documents
 
