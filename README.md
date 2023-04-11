@@ -7,6 +7,20 @@
 - Team Submission
 - [Submission Details](https://canvas.liverpool.ac.uk/courses/59720/assignments/219445)
 
+
+
+Please use markdown to write the user manuals.
+
+## Documents
+
+- [Getting Started | VuePress](https://v2.vuepress.vuejs.org/guide/getting-started.html)   **Note:** install with **npm** on your personal computer is much easier if you are new to the Vue family.
+
+- [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+
+- [GitHub - marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows.](https://github.com/marktext/marktext)
+
+## Assignment Requirements
+
 This continuous assessment component focuses on the end product of your work. Each team will present a demonstration of their completed software system. The demonstration is intended to show the application in action, so the team should prepare a demonstration that shows the various functions of their application. This could include (for a data centred system) showing how the database is maintained, and showing how some sample queries and reports can be performed. If multiple user views are supported, this should also be shown. The demonstration is also an opportunity to show any specially interesting or unusual features of the application at hand. Each team will also attend a Q&A review meeting with a member of the teaching team to discuss further details of their implemented system. In the following sections we provide further details about the two activities that are part of this continuous assessment component.
 
 ## Pre-recorded Video Presentation
@@ -39,5 +53,3 @@ During the period mentioned at the top of the page, there will be a Q&A meeting 
 This event could be run on-campus or using Zoom, Skype or Microsoft Teams, or any other on-line platform allowing video conferencing. The specific arrangements will be agreed with the reviewer.
 
 ### **Q&A sessions should be arranged soon after the term restarts after Easter!!**
-
-
