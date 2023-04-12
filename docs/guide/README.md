@@ -1,39 +1,25 @@
-# Introduction
+# Low-Code Data Analysis User Manual
 
-VuePress is a markdown-centered static site generator. You can write your content (documentations, blogs, etc.) in [Markdown](https://en.wikipedia.org/wiki/Markdown), then VuePress will help you to generate a static site to host them.
+## Introduction
 
-The purpose of creating VuePress was to support the documentation of Vue.js and its sub-projects, but now it has been helping a large amount of users to build their documentation, blogs, and other static sites.
+Low-Code Data Analysis (LCDA) is a tool designed to simplify data analysis by minimizing programming requirements. With LCDA, users can analyze large data sets quickly and easily, without the need for writing complex code. The platform features a user-friendly interface that enables users to drag and drop data into the analysis and visualization results, making it an ideal tool for beginners in artificial intelligence, data scientists, business analysts, and anyone seeking to derive insights from data.
+
+The LCDA platform was developed with the aim of addressing the challenges faced by beginners when dealing with the complicated terminologies associated with artificial intelligence. The LCDA team, comprised of members who took an [introductory course in Artificial Intelligence]([Module Catalogues](http://modules.xjtlu.edu.cn/?mod_code=INT104)) during their undergraduate Year 1 studies, understands the difficulty of learning AI from scratch. To make the process less intimidating for beginners, the team decided to create a website that allows users to explore the world of AI without having to install any software. Currently, the platform is in the demo stage and is continuously being improved to provide a better user experience.
 
 ## How It Works
 
-A VuePress site is in fact a single-page application (SPA) powered by [Vue](https://vuejs.org/) and [Vue Router](https://router.vuejs.org).
+LCDA is a Python-based web application that is built using [Flask](https://flask.palletsprojects.com/en/latest/), making it easily accessible to users through their web browser. Python was chosen as the programming language for this project due to its extensive library of artificial intelligence and data science related packages. This allowed the team to efficiently achieve the project's goals within a limited development timeline.
 
-Routes are generated according to the relative path of your markdown files. Each Markdown file is compiled into HTML with [markdown-it](https://github.com/markdown-it/markdown-it) and then processed as the template of a Vue component. This allows you to directly use Vue inside your Markdown files and is great when you need to embed dynamic content.
-
-During development, we start a normal dev-server, and serve the VuePress site as a normal SPA. If you’ve used Vue before, you will notice the familiar development experience when you are writing and developing with VuePress.
-
-During build, we create a server-rendered version of the VuePress site and render the corresponding HTML by virtually visiting each route. This approach is inspired by [Nuxt](https://nuxtjs.org/)'s `nuxt generate` command and other projects like [Gatsby](https://www.gatsbyjs.org/).
+To ensure that users can access the LCDA platform with ease, the team has implemented various security measures. The platform uses SSL encryption to secure user data during transmission and uses a secure login process to prevent unauthorized access. Additionally, the platform is regularly updated with the latest security patches to ensure that users are protected against any potential vulnerabilities.
 
 ## Why Not ...?
 
-### Nuxt
+### SPSS Statistics
 
-Nuxt is an outstanding Vue SSR framework, and it is capable of doing what VuePress does. But Nuxt is designed for building applications, while VuePress is more lightweight and focused on content-centric static sites.
+SPSS is a widely used data analysis software with an excellent set of products. While SPSS can perform far more specialized functions than LCDA, it requires a fee for usage, and its interface can be complex, making it challenging for beginners to use. In contrast, LCDA prioritizes user-friendly design and intuitive functionality, making it easy for beginners to get started with data analysis.
 
-### VitePress
+### Python
 
-VitePress is the little brother of VuePress. It's also created and maintained by our Vue.js team. It's even more lightweight and faster than VuePress. However, as a tradeoff, it's more opinionated and less configurable. For example, it does not support plugins. But VitePress is powerful enough to make your content online if you don't need advanced customizations.
+Python is a popular programming language for artificial intelligence and data science, and its open-source nature makes it easily accessible. However, for beginners who are unfamiliar with programming, installing and using a large number of Python AI-related packages can be overwhelming, let alone mastering the use of functions in the library. LCDA is a Python-based web application that simplifies data analysis by packaging common data analysis algorithms, providing visualization tools, and offering user-friendly result pages. This reduces the cost of trial and error for beginners and enables them to learn new concepts through exploration.
 
-It might not be an appropriate comparison, but you can take VuePress and VitePress as Laravel and Lumen.
-
-### Docsify / Docute
-
-Both are great projects and also Vue-powered. Except they are both fully runtime-driven and therefore not SEO-friendly. If you don’t care for SEO and don’t want to mess with installing dependencies, these are still great choices.
-
-### Hexo
-
-Hexo has been serving the Vue 2.x docs well. The biggest problem is that its theming system is static and string-based - we want to take advantage of Vue for both the layout and the interactivity. Also, Hexo’s Markdown rendering isn’t the most flexible to configure.
-
-### GitBook
-
-We’ve been using GitBook for most of our sub project docs. The primary problem with GitBook is that its development reload performance is intolerable with a large amount of files. The default theme also has a pretty limiting navigation structure, and the theming system is, again, not Vue based. The team behind GitBook is also more focused on turning it into a commercial product rather than an open-source tool.
+Compared to SPSS and Python, LCDA offers an easy-to-use platform that combines the benefits of both. It provides a low-code solution that simplifies data analysis without sacrificing functionality, making it an ideal choice for beginners, data scientists, business analysts, and anyone looking to derive insights from data with ease.
