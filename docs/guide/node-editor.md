@@ -8,7 +8,7 @@ Node Editor is a fully graphical data processing tool. Here you can apply multip
 
 2. Right-click on any blank space to call out a list of nodes and left-click on the node name to create the node.
 
-<img src="https://s2.loli.net/2023/04/12/z2YQULji1dhmvDw.png" alt="creating_nodes.png" style="zoom: 67%;" />
+<img src="./guide_images/node-editor/creating_nodes.png" style="zoom: 67%;" />
 
 <img src="https://s2.loli.net/2023/04/12/jyQYsKrTqDHOJNd.png" alt="creation_result" style="zoom: 67%;" />
 
