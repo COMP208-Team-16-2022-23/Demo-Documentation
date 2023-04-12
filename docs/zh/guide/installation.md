@@ -54,8 +54,6 @@
    conda env create -f ./misc/environment.yml
    ```
 
-   请注意：如果你使用 Arm 架构的芯片，为保证最佳兼容性，请安装 x86 架构的环境，并通过转译运行。 所需 package
-   见 `/requirements.txt` 。
 
 5. 激活虚拟环境
 
@@ -112,9 +110,9 @@
    
    # Configuration variables for email
    # configure the mail settings
-   MAIL_SERVER = 'smtp.gmail.com'
-   MAIL_PORT = 465
-   MAIL_USE_SSL = True
+   MAIL_SERVER = 'Your email server'
+   MAIL_PORT = Your email server port
+   MAIL_USE_SSL = Whether your email server uses SSL
    MAIL_USERNAME = 'Your email address, gmail is recommended'
    MAIL_PASSWORD = 'Your gmail third-party app password'  # https://support.google.com/accounts/answer/185833
    MAIL_DEFAULT_SENDER = 'LCDA Team'
