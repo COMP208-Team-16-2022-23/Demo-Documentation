@@ -8,7 +8,6 @@
 以及一个可以公网访问的数据库，如 [Amazon RDS](https://aws.amazon.com/rds/)。
 
 请注意，在云中部署 LCDA 需要一定的技术专业知识水平，建议您在尝试自行部署 LCDA 之前具有云服务经验。
-此外，云服务提供商可能会出于测试目的提供免费试用配额，但请注意试用期结束后可能产生的任何潜在费用。
 
 ## 依赖环境
 
@@ -112,7 +111,7 @@
    # configure the mail settings
    MAIL_SERVER = 'Your email server'
    MAIL_PORT = Your email server port
-   MAIL_USE_SSL = Whether your email server uses SSL
+   MAIL_USE_SSL = True # Whether your email server uses SSL
    MAIL_USERNAME = 'Your email address, gmail is recommended'
    MAIL_PASSWORD = 'Your gmail third-party app password'  # https://support.google.com/accounts/answer/185833
    MAIL_DEFAULT_SENDER = 'LCDA Team'
