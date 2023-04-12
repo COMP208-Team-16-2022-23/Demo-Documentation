@@ -7,6 +7,9 @@
 如果你依然想要部署属于自己的LCDA，请确保你能够创建并配置以下实例：[Google Cloud Run](https://cloud.google.com/run)， [Google Cloud Storage](https://cloud.google.com/storage)，
 以及一个可以公网访问的数据库，如 [Amazon RDS](https://aws.amazon.com/rds/)。
 
+请注意，在云中部署 LCDA 需要一定的技术专业知识水平，建议您在尝试自行部署 LCDA 之前具有云服务经验。
+此外，云服务提供商可能会出于测试目的提供免费试用配额，但请注意试用期结束后可能产生的任何潜在费用。
+
 ## 依赖环境
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+

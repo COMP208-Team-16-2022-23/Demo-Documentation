@@ -1,5 +1,18 @@
 # Installation and Deployment Guide
 
+## Before Starting the Installation
+
+The quickest way to use LCDA is to directly visit the [official website of LCDA](https://lcda-vgnazlwvxa-uw.a.run.app/).
+
+However, if you want to deploy your own LCDA, it is essential to ensure that you can create and configure the following
+instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Storage](https://cloud.google.com/storage), 
+and a publicly accessible database such as [Amazon RDS](https://aws.amazon.com/rds/).
+
+Please note that deploying LCDA in the cloud requires a certain level of technical expertise, and it is recommended that
+you have experience with cloud services before attempting to deploy LCDA on your own. Additionally, cloud service
+providers may offer free trial quotas for testing purposes, but be aware of any potential costs that may be incurred
+after the trial period ends.
+
 ## Prerequisites
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
