@@ -2,10 +2,11 @@
 
 ## 在开始安装之前
 
-使用和体验LCDA最简单的办法：直接访问[LCDA官网](https://lcda-vgnazlwvxa-uw.a.run.app/)。
+使用和体验 LCDA 最简单的办法：直接访问 [LCDA 官网](https://lcda-vgnazlwvxa-uw.a.run.app/) 。
 
-如果你依然想要部署属于自己的LCDA，请确保你能够创建并配置以下实例：[Google Cloud Run](https://cloud.google.com/run)， [Google Cloud Storage](https://cloud.google.com/storage)，
-以及一个可以公网访问的数据库，如 [Amazon RDS](https://aws.amazon.com/rds/)。
+如果你依然想要部署属于自己的 LCDA
+，请确保你能够创建并配置以下实例：[Google Cloud Run](https://cloud.google.com/run) ， [Google Cloud Storage](https://cloud.google.com/storage) ，
+以及一个可以公网访问的数据库，如 [Amazon RDS](https://aws.amazon.com/rds/) 。
 
 请注意，在云中部署 LCDA 需要一定的技术专业知识水平，建议您在尝试自行部署 LCDA 之前具有云服务经验。
 
@@ -24,7 +25,7 @@
 
 ## 安装和部署步骤
 
-这一章节会帮助你从零开始一步步直到本地部署LCDA平台。
+这一章节会帮助你从零开始一步步直到本地部署 LCDA 平台。
 
 1. 创建并进入一个新目录
 
@@ -45,16 +46,16 @@
    cd Group-Project-Code
    ```
 
-4. 创建Python虚拟环境
+4. 创建 Python 虚拟环境
 
-   你可以创建conda虚拟环境或其他虚拟环境，如virtualenv。后者需要的requirements.txt文件可以在项目根目录中找到。这里我们使用conda创建虚拟环境。
+   你可以创建 Conda 虚拟环境或其他虚拟环境，如 virtualenv 。后者需要的 `requirements.txt` 文件可以在项目根目录中找到。这里我们使用
+   Conda 创建虚拟环境。
 
-   这一步会自动帮你创建一个名为 `COMP208` ，Python 版本为 3.10 的 Conda 虚拟环境。 此步骤需要几分钟时间，请耐心等待。
+   这一步会自动帮你创建一个名为 `COMP208` ， Python 版本为 3.10 的 Conda 虚拟环境。 此步骤需要几分钟时间，请耐心等待。
 
    ```bash
    conda env create -f ./misc/environment.yml
    ```
-
 
 5. 激活虚拟环境
 
@@ -64,7 +65,7 @@
 
 6. 使用 Pip 补充安装 Conda 仓库中缺失的包
 
-   由于 `psython` 和 `better-profanity` 两个包的开发者没有维护 Conda 源，因此使用Pip补充安装。
+   由于 `psython` 和 `better-profanity` 两个包的开发者没有维护 Conda 源，因此使用 Pip 补充安装。
 
    ```bash
    pip install psython better-profanity
@@ -84,11 +85,11 @@
     - [Google Cloud Run](https://cloud.google.com/run)：LCDA 使用 Google Cloud Run 托管并部署网站。详细的 Google Cloud Run
       使用教程请参考[官方文档](https://cloud.google.com/run/docs)。
 
-8. 配置  `/secret.py`
+8. 配置  `secret.py`
 
-   在部署和运行LCDA之前，你需要在`/secret.py`文件中配置相关信息。这个文件包含敏感信息，如API密钥、数据库密码和其他应用程序正常运行所需的秘密。在这种情况下，它还包括相关的谷歌云信息。
+   在部署和运行LCDA之前，你需要在 `/secret.py` 文件中配置相关信息。这个文件包含敏感信息，如API密钥、数据库密码和其他应用程序正常运行所需的秘密。在这种情况下，它还包括相关的谷歌云信息。
 
-   下面是配置`/secret.py`的样例：
+   下面是配置 `/secret.py` 的样例：
 
    ```python
    from datetime import timedelta
@@ -124,8 +125,7 @@
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
 
-
-9. 本地部署LCDA
+9. 本地部署 LCDA
 
    <CodeGroup>
    <CodeGroupItem title="Bash" active>
