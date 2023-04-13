@@ -9,14 +9,12 @@ instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Stora
 and a publicly accessible database such as [Amazon RDS](https://aws.amazon.com/rds/).
 
 Please note that deploying LCDA in the cloud requires a certain level of technical expertise, and it is recommended that
-you have experience with cloud services before attempting to deploy LCDA on your own. Additionally, cloud service
-providers may offer free trial quotas for testing purposes, but be aware of any potential costs that may be incurred
-after the trial period ends.
+you have experience with cloud services before attempting to deploy LCDA on your own. 
 
 ## Prerequisites
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
-  or [Anaconda ](https://www.anaconda.com/products/distribution)v23.1.0+
+  or [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
 
 - [Git](https://git-scm.com/downloads) v2.30+
 
@@ -51,16 +49,15 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 4. Create a Python virtual environment
 
+   You can create a conda virtual environment or another virtual environment such as virtualenv. 
+   The latter requires the requirements.txt file which can be found in the project root. Here we use conda to create a virtual environment.
+
    In this step, we will create a Conda virtual environment named `COMP208` with Python version 3.10. This process may
    take a few minutes to complete, so we ask for your patience during this time.
 
    ```bash
    conda env create -f ./misc/environment.yml
    ```
-
-   Please note that if you are using an Arm-based chip, we recommend installing an x86-based environment for optimal
-   compatibility. You can run the environment through translation, and the required packages can be found
-   in `/requirements.txt`.
 
 5. Activate the virtual environment
 
@@ -128,26 +125,17 @@ This section will help you step by step from scratch to deploying the LCDA platf
    
    # Configuration variables for email
    # configure the mail settings
-   MAIL_SERVER = 'smtp.gmail.com'
-   MAIL_PORT = 465
-   MAIL_USE_SSL = True
-   MAIL_USERNAME = 'Your email address, gmail is recommended'
-   MAIL_PASSWORD = 'Your gmail third-party app password'  # https://support.google.com/accounts/answer/185833
+   MAIL_SERVER = 'Your email server'
+   MAIL_PORT = 465 # Your email server port
+   MAIL_USE_SSL = True # Whether your email server uses SSL
+   MAIL_USERNAME = 'Your email address'
+   MAIL_PASSWORD = 'Your email account password' 
    MAIL_DEFAULT_SENDER = 'LCDA Team'
    MAIL_MAX_EMAILS = None
    
    # Configuration variables for Google Cloud Storage
    GOOGLE_APPLICATION_CREDENTIALS = {
-       "type": "service_account",
-       "project_id": "Your Google Cloud Storage project id",
-       "private_key_id": "Your Google Cloud Storage private key id",
-       "private_key": "Your Google Cloud Storage private key",
-       "client_email": "Your Google Cloud Storage client email",
-       "client_id": "Your Google Cloud Storage client id",
-       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-       "token_uri": "https://oauth2.googleapis.com/token",
-       "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-       "client_x509_cert_url": "Your Google Cloud Storage client x509 cert url"
+       # Your service account key, in json format.
    }
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
@@ -176,5 +164,5 @@ This section will help you step by step from scratch to deploying the LCDA platf
    </CodeGroupItem>
    </CodeGroup>
 
-You're done! Now you can visit http://127.0.0.1:5000 or the domain name deployed by Google Cloud Run in your browser to
+You're done! Now you can visit http://127.0.0.1:5000 in your browser to
 access LCDA.

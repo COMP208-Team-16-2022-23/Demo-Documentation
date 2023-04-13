@@ -12,7 +12,7 @@
 ## 依赖环境
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
-  或 [Anaconda ](https://www.anaconda.com/products/distribution)v23.1.0+
+  或 [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
 
 - [Git](https://git-scm.com/downloads) v2.30+
 
@@ -46,6 +46,8 @@
    ```
 
 4. 创建Python虚拟环境
+
+   你可以创建conda虚拟环境或其他虚拟环境，如virtualenv。后者需要的requirements.txt文件可以在项目根目录中找到。这里我们使用conda创建虚拟环境。
 
    这一步会自动帮你创建一个名为 `COMP208` ，Python 版本为 3.10 的 Conda 虚拟环境。 此步骤需要几分钟时间，请耐心等待。
 
@@ -82,8 +84,6 @@
     - [Google Cloud Run](https://cloud.google.com/run)：LCDA 使用 Google Cloud Run 托管并部署网站。详细的 Google Cloud Run
       使用教程请参考[官方文档](https://cloud.google.com/run/docs)。
 
-   别担心，云服务厂商可能会赠予用户一定量的免费试用额度，如果只是用于测试，不会有额外的费用支出。
-
 8. 配置  `/secret.py`
 
    在部署和运行LCDA之前，你需要在`/secret.py`文件中配置相关信息。这个文件包含敏感信息，如API密钥、数据库密码和其他应用程序正常运行所需的秘密。在这种情况下，它还包括相关的谷歌云信息。
@@ -110,25 +110,16 @@
    # Configuration variables for email
    # configure the mail settings
    MAIL_SERVER = 'Your email server'
-   MAIL_PORT = Your email server port
+   MAIL_PORT = 465 # Your email server port
    MAIL_USE_SSL = True # Whether your email server uses SSL
-   MAIL_USERNAME = 'Your email address, gmail is recommended'
-   MAIL_PASSWORD = 'Your gmail third-party app password'  # https://support.google.com/accounts/answer/185833
+   MAIL_USERNAME = 'Your email address'
+   MAIL_PASSWORD = 'Your email account password' 
    MAIL_DEFAULT_SENDER = 'LCDA Team'
    MAIL_MAX_EMAILS = None
    
    # Configuration variables for Google Cloud Storage
    GOOGLE_APPLICATION_CREDENTIALS = {
-       "type": "service_account",
-       "project_id": "Your Google Cloud Storage project id",
-       "private_key_id": "Your Google Cloud Storage private key id",
-       "private_key": "Your Google Cloud Storage private key",
-       "client_email": "Your Google Cloud Storage client email",
-       "client_id": "Your Google Cloud Storage client id",
-       "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-       "token_uri": "https://oauth2.googleapis.com/token",
-       "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-       "client_x509_cert_url": "Your Google Cloud Storage client x509 cert url"
+       # Your service account key, in json format.
    }
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
@@ -160,4 +151,4 @@
    </CodeGroupItem>
    </CodeGroup>
 
-大功告成！现在即可在浏览器访问 http://127.0.0.1:5000 或 Google Cloud Run 部署的域名来访问 LCDA 了。
+大功告成！现在即可在浏览器访问 http://127.0.0.1:5000 来访问 LCDA 了。
