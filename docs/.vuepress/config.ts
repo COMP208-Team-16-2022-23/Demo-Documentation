@@ -30,6 +30,8 @@ export default defineUserConfig({
                     children: ['/guide/README.md',
                         '/guide/installation.md',
                         '/guide/my-data.md',
+                        '/guide/data-processing.md',
+                        '/guide/data-analysis.md',
                         '/guide/forum.md',
                         '/guide/node-editor.md'
                     ],
@@ -42,9 +44,10 @@ export default defineUserConfig({
                         '/zh/guide/README.md',
                         '/zh/guide/installation.md',
                         '/zh/guide/my-data.md',
+                        '/zh/guide/data-processing.md',
+                        '/zh/guide/data-analysis.md',
                         '/zh/guide/forum.md',
                         '/zh/guide/node-editor.md',
-
                     ],
                 },
             ],
