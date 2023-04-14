@@ -7,7 +7,7 @@ actions:
     link: /guide/
     type: primary
   - text: User Manual
-    link: /guide/installation.html
+    link: /guide/my-data.html
     type: secondary
 footer: Copyright © 2023 LCDA Team.
 ---
