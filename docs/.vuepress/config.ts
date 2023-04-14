@@ -29,6 +29,7 @@ export default defineUserConfig({
                     collapsible: true,
                     children: ['/guide/README.md',
                         '/guide/installation.md',
+                        '/guide/my-data.md',
                         '/guide/forum.md',
                         '/guide/node-editor.md'
                     ],
@@ -40,8 +41,10 @@ export default defineUserConfig({
                     children: [
                         '/zh/guide/README.md',
                         '/zh/guide/installation.md',
+                        '/zh/guide/my-data.md',
                         '/zh/guide/forum.md',
                         '/zh/guide/node-editor.md',
+
                     ],
                 },
             ],
