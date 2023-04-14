@@ -164,5 +164,5 @@ This section will help you step by step from scratch to deploying the LCDA platf
    </CodeGroupItem>
    </CodeGroup>
 
-You're done! Now you can visit http://127.0.0.1:5000 in your browser to
+You're done! Now you can visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to
 access LCDA.
