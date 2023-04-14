@@ -1,6 +1,6 @@
 # Data Analysis
 
-Data Analysis helps you to analyze your data on top of [Data Processing](/Demo-Documentation/guide/data-processing.html). Data Analysis provides various algorithms and models used in economics, medicine, social science and Machine Learning, etc.
+Data Analysis helps you to analyze your data on top of [Data Processing](./data-processing.md). Data Analysis provides various algorithms and models used in economics, medicine, social science and Machine Learning, etc.
 
 This chapter will tell you how to analyze data with LCDA, with all the information about the algorithms we provide.
 

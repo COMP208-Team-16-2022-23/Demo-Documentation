@@ -29,6 +29,7 @@ export default defineUserConfig({
                     collapsible: true,
                     children: ['/guide/README.md',
                         '/guide/installation.md',
+                        '/guide/authentication.md',
                         '/guide/my-data.md',
                         '/guide/data-processing.md',
                         '/guide/data-analysis.md',
@@ -43,6 +44,7 @@ export default defineUserConfig({
                     children: [
                         '/zh/guide/README.md',
                         '/zh/guide/installation.md',
+                        '/zh/guide/authentication.md',
                         '/zh/guide/my-data.md',
                         '/zh/guide/data-processing.md',
                         '/zh/guide/data-analysis.md',

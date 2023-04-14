@@ -1,7 +1,6 @@
+# 用户认证
 
-> 该页面不提供中文，将以英语显示
-
-# Authentication of Users
+> 此页面暂无中文版本，将以英文显示。
 
 ## Introduction
 
@@ -12,7 +11,7 @@ User authentication is an important part of our platform. To ensure that no user
 ### Login
 To access the platform, users must first authenticate themselves through the login process. 
 
-![Login](./images/auth/login.jpg)
+![Login](/images/auth/login.jpg)
 
 
 To login, follow these steps:
@@ -30,7 +29,7 @@ you will be redirected to 'My Data' page or the page that requires login.
 
 To use our platform, you must first register an account.
 
-![Register](./images/auth/register.jpg)
+![Register](/images/auth/register.jpg)
 
 To register, follow these steps:
 
@@ -46,7 +45,7 @@ Once verified, you will be redirected to the login page.
 
 ### Password Reset
 
-![Forgot password](./images/auth/forgot.png)
+![Forgot password](/images/auth/forgot.png)
 
 If you have forgotten your password, follow these steps to reset it:
 
@@ -56,7 +55,7 @@ If you have forgotten your password, follow these steps to reset it:
 
 If the email address is registered, you will receive an OTP (One Time Password) email to the provided email address. 
 
-![Reset passowrd](./images/auth/reset.jpg)
+![Reset passowrd](/images/auth/reset.jpg)
 
 Use the OTP to reset your password by following these steps:
 
