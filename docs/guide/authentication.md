@@ -14,7 +14,7 @@ To access the platform, users must first authenticate themselves through the log
 
 To login, follow these steps:
 
-1. Click on the ['Login'](https://lcda-vgnazlwvxa-uw.a.run.app/auth/login) button or be redirected to the login page.
+1. Click on the '[Login](https://lcda-vgnazlwvxa-uw.a.run.app/auth/login)' button or be redirected to the login page.
 
 2. Enter your registered email address and password.
 
@@ -36,10 +36,10 @@ To register, follow these steps:
 and desired password. The password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one digit.
 3. Read the [Terms and Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms) 
 and [Privacy Policy](https://lcda-vgnazlwvxa-uw.a.run.app/legal/privacy) carefully. 
-5. Check the "Agree to Terms of Use and Privacy Policy" checkbox.
-4. Click on the "Register" button.
+4. Check the "Agree to Terms of Use and Privacy Policy" checkbox.
+5. Click on the "Register" button.
 
-Once verified, you will be redirected to the login page.
+Once verified, you will be redirected to the login page. You will also receive a welcome email.
 
 ### Password Reset
 
