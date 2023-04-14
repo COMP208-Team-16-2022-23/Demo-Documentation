@@ -1,8 +1,7 @@
 # Low-Code Data Analysis User Manual
 
-> As LCDA Team currently have limited financial resources, the LCDA website server is configured with minimal resources which
-> might result in longer loading times. We sincerely apologize for any inconvenience this may cause and kindly ask for
-> your patience and understanding.
+> As our website is a serverless architecture, this may cause the site to take longer to load. 
+> We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 
 ## Official Website
 
