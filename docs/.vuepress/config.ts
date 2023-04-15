@@ -33,7 +33,8 @@ export default defineUserConfig({
                         '/guide/data-processing.md',
                         '/guide/data-analysis.md',
                         '/guide/forum.md',
-                        '/guide/node-editor.md'
+                        '/guide/node-editor.md',
+                        // '/guide/all-in-one.md'
                     ],
                 },
             ],
