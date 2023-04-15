@@ -328,7 +328,7 @@ In the file list, you can preview, download and delete files.
 - Download: You can download **any** file locally
 - Delete: You can delete **only** files uploaded or created by yourself
 
-> When you use **Data Processing**[link_TBD], processed files will be created automatically and added to the file list .
+> When you use [**Data Processing**](#data-processing), processed files will be created automatically and added to the file list .
 > If you try to delete a file involved in a **Data Processing** project, you will receive a warning. You will then be
 > able to decide whether or not to proceed with the deletion operation.
 
@@ -548,7 +548,7 @@ various algorithms and models used in economics, medicine, social science and Ma
 
 This chapter will tell you how to analyze data with LCDA, with all the information about the algorithms we provide.
 
-### Analysis Flow
+### Analysis Steps
 
 1. Click on `Data Analysis` in the navigation bar above to go to the data analysis page.
 
@@ -646,6 +646,23 @@ measure (e.g., distance functions).
   variable. <!--content here need check-->
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
+###### Parameter Options
+
+  - Data Shuffling: Whether to shuffle data randomly
+  - Training Ratio: Ratio of training data to the whole dataset
+  - Cross Validation:  The number of equal sized subsamples randomly partitioned from the original sample. Each subsample will be retained as the validation data for testing the model, and the remaining subsamples will be used as training data
+  - Number of Neighbors: Number of neighbors to use
+  - Weights: Weight function used in prediction. Selection values: 
+    - uniform: Uniform weights. All points in each neighborhood are weighted equally
+    - distance: Weight points by the inverse of their distance. in this case, closer neighbors of a query point will have a greater influence than neighbors which are further away
+  - Algorithm: Algorithm used to compute the nearest neighbors. Selection values: 
+    - auto: will attempt to decide the most appropriate algorithm based on the values passed
+    - ball_tree: will use [`BallTree`](https://en.wikipedia.org/wiki/Ball_tree)
+    - kd_tree: will use [`KDTree`]([k-d tree - Wikipedia](https://en.wikipedia.org/wiki/K-d_tree)) 
+    - brute: will use a brute-force search Note: fitting on sparse input will override the setting of this parameter, using brute force
+  - Leaf Size: Leaf size passed to `BallTree` or `KDTree`. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem
+  - P: Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used
+
 ##### SVM classification
 
 Support vector machine (SVM) is a class of generalised linear classifiers that perform binary classification of data in
@@ -656,6 +673,16 @@ samples.
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The classification results of the model and the evaluation effect of the model classification.
+
+###### Parameter Options
+
+  - Data Shuffling: Whether to shuffle data randomly
+  - Training Ratio: Ratio of training data to the whole dataset
+  - Cross Validation:  The number of equal sized subsamples randomly partitioned from the original sample. Each subsample will be retained as the validation data for testing the model, and the remaining subsamples will be used as training data
+  - Penalty Coefficient: Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty
+  - Kernel Algorithm: Specifies the kernel type to be used in the algorithm
+  - Error Convergence Conditions: Tolerance for stopping criterion
+  - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
 ##### Decision Tree
 
