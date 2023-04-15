@@ -2,6 +2,7 @@
 home: true
 title: Home
 heroImage: /images/hero.png
+heroImageDark: /images/hero-white.png
 actions:
   - text: 项目简介
     link: /zh/guide/

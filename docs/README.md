@@ -2,6 +2,7 @@
 home: true
 title: Home
 heroImage: /images/hero.png
+heroImageDark: /images/hero-white.png
 actions:
   - text: Introduction
     link: /guide/

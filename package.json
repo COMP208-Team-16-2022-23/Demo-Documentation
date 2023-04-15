@@ -13,6 +13,8 @@
   "devDependencies": {
     "@condorhero/vuepress-plugin-export-pdf-v2": "latest",
     "@vuepress/client": "next",
+    "@vuepress/plugin-back-to-top": "next",
+    "@vuepress/plugin-search": "next",
     "vue": "latest",
     "vuepress": "next"
   }
