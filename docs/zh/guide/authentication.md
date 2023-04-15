@@ -2,13 +2,11 @@
 
 > 此页面暂无中文版本，将以英文显示。
 
-## Introduction
-
 User authentication is an important part of our platform. To ensure that no user data is lost, most functions require a login. By registering, we ensure that your data is kept private and that you give your informed consent to our terms and policies.
 
 > Note: You may not receive the expected email. If this is the case, please check that your email address is valid and check the spam folder of your mailbox. In some cases, you need to contact your email provider.
 
-### Login
+## Login
 To access the platform, users must first authenticate themselves through the login process. 
 
 ![Login](/images/auth/login.jpg)
@@ -25,7 +23,7 @@ If the email address and password match what we have on record,
 you will be redirected to 'My Data' page or the page that requires login.
 
 
-### Registration
+## Registration
 
 To use our platform, you must first register an account.
 
@@ -43,7 +41,7 @@ and [Privacy Policy](https://lcda-vgnazlwvxa-uw.a.run.app/legal/privacy) careful
 
 Once verified, you will be redirected to the login page.
 
-### Password Reset
+## Password Reset
 
 ![Forgot password](/images/auth/forgot.png)
 
