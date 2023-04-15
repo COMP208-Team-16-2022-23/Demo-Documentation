@@ -3,11 +3,11 @@
 > As our website is a serverless architecture, this may cause the site to take longer to load.
 > We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 
-### Official Website
+**Official Website**
 
 [lcda.space](http://lcda.space)
 
-### Introduction
+## Introduction
 
 Low-Code Data Analysis (LCDA) is a tool designed to simplify data analysis by minimizing programming requirements. With
 LCDA, users can analyze large data sets quickly and easily, without the need for writing complex code. The platform
@@ -198,7 +198,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
        # Your service account key, in json format.
    }
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
-   ```
+      ```
 
 9. Deploy LCDA locally
 
