@@ -19,8 +19,6 @@ export default defineUserConfig({
     },
     // set title color to red
 
-    base: '/Demo-Documentation/', // docs: https://v2.vuepress.vuejs.org/guide/deployment.html#github-pages
-
     plugins: [
         backToTopPlugin(),
         searchPlugin({
