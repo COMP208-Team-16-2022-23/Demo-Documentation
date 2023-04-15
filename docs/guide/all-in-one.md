@@ -1,11 +1,16 @@
 # Low-Code Data Analysis User Manual
 
-> As our website is a serverless architecture, this may cause the site to take longer to load.
-> We apologise for any inconvenience this may cause you and ask for your patience and understanding.
+**Author: 2022/23-COMP208-Team16**
+
+Haoran Lu, Jiaqi Liao, Jiawei Li, Zhan Jin, Ziqiu Jiang
+
 
 **Official Website**
 
 [lcda.space](http://lcda.space)
+
+> As our website is a serverless architecture, this may cause the site to take longer to load.
+> We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 
 ## Introduction
 

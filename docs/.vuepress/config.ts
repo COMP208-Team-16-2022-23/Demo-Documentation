@@ -11,7 +11,7 @@ export default defineUserConfig({
         },
     },
     title: 'Low-Code Data Analysis',
-    description: 'A simplified approach to data analysis with less coding required.',
+    description: 'Simplifying Data Analysis',
     base: '/Demo-Documentation/', // docs: https://v2.vuepress.vuejs.org/guide/deployment.html#github-pages
     theme: defaultTheme({
         locales: {
