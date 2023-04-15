@@ -15,6 +15,7 @@
     "@vuepress/client": "next",
     "@vuepress/plugin-back-to-top": "next",
     "@vuepress/plugin-search": "next",
+    "@vuepress/theme-default": "next",
     "vue": "latest",
     "vuepress": "next"
   }
