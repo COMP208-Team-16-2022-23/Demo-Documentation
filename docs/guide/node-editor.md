@@ -11,11 +11,11 @@ datasets on a single page at the same time.
 2. Right-click on any blank space to call out a list of nodes and left-click on the node name to create the node.
 
     <img src="./images/node-editor/creating_nodes.png" style="zoom: 67%;" />
-    
+
     <img src="https://s2.loli.net/2023/04/12/jyQYsKrTqDHOJNd.png" alt="creation_result" style="zoom: 67%;" />
-    
-    The nodes to create can be divided functionally into three categories: data nodes, processing nodes and output nodes.
-    For a more detailed description of the nodes see [List of Nodes](#list-of-nodes).
+
+   The nodes to create can be divided functionally into three categories: data nodes, processing nodes and output nodes.
+   For a more detailed description of the nodes see [List of Nodes](#list-of-nodes).
 
 3. When establishing a processing flow, there are several points to note:
 
@@ -65,8 +65,8 @@ Data`.
 
 ### Output Nodes
 
-An output node is a node that only has an input interface but no output interface. In the node editor, a process **must
-** contain **at least one** output node to activate the process. Otherwise, **any** calculations or operations in the
+An output node is a node that only has an input interface but no output interface. In the node editor, a process 
+**must** contain **at least one** output node to activate the process. Otherwise, **any** calculations or operations in the
 flow will not be effective.
 
 - End Node

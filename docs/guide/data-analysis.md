@@ -35,7 +35,7 @@ This chapter will tell you how to analyze data with LCDA, with all the informati
 
 A normality test is any statistical test for determining whether a data sample comes from a normal distribution.
 
-###### Input and Output
+##### Input and Output
 
 - Input: One or more quantitative variables
 - Output: The results of the model test (with data satisfying/not satisfying a normal distribution)
@@ -46,9 +46,9 @@ A normality test is any statistical test for determining whether a data sample c
 
 #### Reliability Analysis
 
-Reliability analysis is mainly used to examine the stability and consistency of the results measured by the scale in the questionnaire, that is, to test whether the scale samples in the questionnaire are reliable and credible. The scale question type is the option of the question, which is set according to the level of statement. For example, our love for mobile phones has changed from very fond of to dislike. The most famous scale in the scale is the Likert 5-level scale. The options of this scale are mainly divided into "strongly agree", "agree", "not sure", "disagree", "very disagree"” five answers, recorded as 5, 4, 3, 2, 1 respectively.
+Reliability analysis is mainly used to examine the stability and consistency of the results measured by the scale in the questionnaire, that is, to test whether the scale samples in the questionnaire are reliable and credible. The scale question type is the option of the question, which is set according to the level of statement. For example, our love for mobile phones has changed from very fond of to dislike. The most famous scale in the scale is the Likert 5-level scale. The options of this scale are mainly divided into "strongly agree", "agree", "not sure", "disagree", "very disagree" five answers, recorded as 5, 4, 3, 2, 1 respectively.
 
-###### Input and Output
+##### Input and Output
 
 - Input: At least two or more quantitative variables or ordered fixed categories of variables, generally requiring data to be scale data
 - Output: Reliability of the reliability of the collection questionnaire scales
@@ -61,7 +61,7 @@ Reliability analysis is mainly used to examine the stability and consistency of 
 
 When using many time series models, such as ARMA and ARIMA, the time series is required to be stationary, so generally when studying a period of time series, the first step is to perform a stationarity test. In addition to the method of visual inspection, in addition The more commonly used strict statistical test method is the ADF test, also known as the unit root test.
 
-###### Input and Output
+##### Input and Output
 
 - Input: 1 quantitative variable for time series data
 - Output: Sequence data is smoothed at several orders of differencing
@@ -87,7 +87,7 @@ A method for visual consistency checking. Its principle is an intuitive method t
 
 K-Nearest Neighbors is a simple algorithm that stores all available cases and classifies new cases based on a similarity measure (e.g., distance functions).
 
-###### Input and Output
+##### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable. <!--content here need check-->
 - Output: The classification results of the model and the evaluation effect of the model classification.
@@ -96,7 +96,7 @@ K-Nearest Neighbors is a simple algorithm that stores all available cases and cl
 
 Support vector machine (SVM) is a class of generalised linear classifiers that perform binary classification of data in a supervised learning fashion, with a decision boundary that is a maximum margin hyperplane solved for the learned samples.
 
-###### Input and Output
+##### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The classification results of the model and the evaluation effect of the model classification.
@@ -105,7 +105,7 @@ Support vector machine (SVM) is a class of generalised linear classifiers that p
 
 A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
 
-###### Input and Output
+##### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The structure of the decision tree constructed by the model and the evaluation effect of the model classification.

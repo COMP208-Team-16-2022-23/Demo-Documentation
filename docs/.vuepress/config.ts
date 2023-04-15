@@ -26,7 +26,6 @@ export default defineUserConfig({
             '/guide/': [
                 {
                     text: 'Guide',
-                    collapsible: true,
                     children: ['/guide/README.md',
                         '/guide/installation.md',
                         '/guide/authentication.md',
