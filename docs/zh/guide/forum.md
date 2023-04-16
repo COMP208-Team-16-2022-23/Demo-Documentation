@@ -81,7 +81,7 @@
 
 ![Forum post](/images/forum/forum-random-text.jpeg)
 
-### 发布了违反 [LCDA 服务条款](https://www.lcda.space/legal/terms#ugc)中的内容
+### 发布了不友善内容
 
 测试内容：
 
