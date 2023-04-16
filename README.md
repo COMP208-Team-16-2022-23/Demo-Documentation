@@ -1,6 +1,6 @@
 # Project Demonstrations
 
-**Weighting: 15%**|**no page limit**
+**Weighting: 15%** | **no page limit**
 
 - Deadline (for the submission of the supporting material): 26 April 2022; Q&A session between 26 April and 29 April 2022.
 - [Marking Guidelines](https://canvas.liverpool.ac.uk/courses/59720/pages/assessment "Assessment")
