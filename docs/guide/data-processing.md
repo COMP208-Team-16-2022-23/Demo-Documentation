@@ -78,7 +78,7 @@ Please make sure you have saved the data you need before deleting the project.
 
 ## Data Processing Algorithms
 
-### Outlier handling
+### Outlier Handling
 
 #### Description
 
@@ -113,7 +113,7 @@ accuracy of the results can be enhanced.
 
   ![](/images/data-processing/Example_Outlier_handling.jpg)
 
-### Missing value handling
+### Missing Value Handling
 
 #### Description
 
@@ -145,7 +145,7 @@ accuracy and reliability of data analysis and machine learning models can be imp
 
   ![](/images/data-processing/Example_Missing_value_handling.jpg)
 
-### Tail shrinkage and truncation processing
+### Tail Shrinkage and Truncation Processing
 
 #### Description
 
@@ -173,7 +173,7 @@ values with their specific percentile values, while truncation directly deletes 
 
   ![](/images/data-processing/Example_Tail_shrinkage_and_truncation_processing.jpg)
 
-### Data transformation
+### Data Transformation
 
 #### Description
 
@@ -193,7 +193,7 @@ reduction, feature extraction, anomaly detection, and data smoothing.
 
   ![](/images/data-processing/Example_Data_transformation.jpg)
 
-### Dimension reduction
+### Dimension Reduction
 
 #### Description
 
@@ -217,7 +217,7 @@ generalization ability of machine learning models.
 
   ![](/images/data-processing/Example_Dimension_reduction.jpg)
 
-### Sample balancing
+### Sample Balancing
 
 #### Description
 

@@ -3,7 +3,7 @@
 Node Editor is a fully graphical data processing tool. Here you can apply multiple data processing methods to multiple
 datasets on a single page at the same time.
 
-## How to use
+## How to Use
 
 1. Once logged in, click on **Node Editor** from the top navigation bar to access the node editor
    interface.<!--can add link-->

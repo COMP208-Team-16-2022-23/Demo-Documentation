@@ -41,7 +41,7 @@ users are protected against any potential vulnerabilities.
 
 ### SPSS Statistics
 
-SPSS is a widely used data analysis software with an excellent set of products. While SPSS can perform far more
+[SPSS](https://www.ibm.com/products/spss-statistics) is a widely used data analysis software with an excellent set of products. While SPSS can perform far more
 specialized functions than LCDA, it requires a fee for usage, and its interface can be complex, making it challenging
 for beginners to use. In contrast, LCDA prioritizes user-friendly design and intuitive functionality, making it easy for
 beginners to get started with data analysis.

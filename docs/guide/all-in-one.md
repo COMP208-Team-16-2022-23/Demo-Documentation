@@ -88,7 +88,7 @@ you have experience with cloud services before attempting to deploy LCDA on your
 
 - [Amazon RDS](https://aws.amazon.com/rds/)
 
-### Installation and deployment steps
+### Installation and Deployment Steps
 
 This section will help you step by step from scratch to deploying the LCDA platform.
 
@@ -421,7 +421,7 @@ project.
 
 ### Data Processing Algorithms
 
-#### Outlier handling
+#### Outlier Handling
 
 ##### Description
 
@@ -442,7 +442,7 @@ results.
 - `Processing method`: Outlier processing method. Currently supports `set to null`, `set to mean`, and `set to median`
   three methods.
 
-#### Missing value handling
+#### Missing Value Handling
 
 ##### Description
 
@@ -458,7 +458,7 @@ median imputation. These methods can help to reduce the bias and improve the acc
   four methods.
 - `filling method`: missing value processing method. Currently supports `mean`, `median`, and `mode` three methods.
 
-#### Tail shrinkage and truncation processing
+#### Tail Shrinkage and Truncation Processing
 
 ##### Description
 
@@ -480,7 +480,7 @@ help to reduce the bias and improve the accuracy of statistical analysis.
 - `processing_method`: Tail shrinkage and truncation processing method. Currently supports `delete_value`
   and `delete_row` two methods.
 
-#### Data transformation
+#### Data Transformation
 
 ##### Description
 
@@ -496,7 +496,7 @@ is to be applied, or to improve the interpretability or appearance of graphs.
 - `transform_method`: Data conversion method. Currently, [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) and
   IFFT (Inverse Fast Fourier Transform) are supported.
 
-#### Dimension reduction
+#### Dimension Reduction
 
 ##### Description
 
@@ -516,7 +516,7 @@ overfitting.
   and [LDA](https://en.wikipedia.org/wiki/Linear_discriminant_analysis) two methods.
 - `n_components`: Number of components to keep. Data types are numeric.
 
-#### Sample balancing
+#### Sample Balancing
 
 ##### Description
 
@@ -809,7 +809,7 @@ Content after swear words are censored:
 Node Editor is a fully graphical data processing tool. Here you can apply multiple data processing methods to multiple
 datasets on a single page at the same time.
 
-### How to use
+### How to Use
 
 1. Once logged in, click on **Node Editor** from the top navigation bar to access the node editor
    interface.<!--can add link-->

@@ -24,7 +24,7 @@ you have experience with cloud services before attempting to deploy LCDA on your
 
 - [Amazon RDS](https://aws.amazon.com/rds/)
 
-## Installation and deployment steps
+## Installation and Deployment Steps
 
 This section will help you step by step from scratch to deploying the LCDA platform.
 
