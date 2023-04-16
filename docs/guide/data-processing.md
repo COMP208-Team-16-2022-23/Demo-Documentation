@@ -87,6 +87,16 @@ Therefore, outlier handling algorithms are essential for identifying and dealing
 These algorithms can help improve the quality of the dataset and ultimately lead to more accurate and reliable analysis
 results.
 
+Outlier handling algorithms can use various methods for identification and management, including statistical-based, 
+machine learning-based, and deep learning-based approaches. Common statistical-based methods include the 3σ rule, box 
+plot method, etc. Machine learning-based methods include Local Outlier Factor (LOF), Isolation Forest, etc., while deep 
+learning-based methods include Autoencoder, etc.
+
+When dealing with outliers, it is necessary to choose the appropriate algorithm based on the specific scenario. 
+Sometimes, certain outliers may contain useful information, and therefore require careful consideration and management. 
+In general, through appropriate outlier handling algorithms, the quality of the dataset can be improved, and the 
+accuracy of the results can be enhanced.
+
 > [Outlier - Wikipedia](https://en.wikipedia.org/wiki/Outlier)
 
 #### Parameters
@@ -97,13 +107,29 @@ results.
 - `Processing method`: Outlier processing method. Currently supports `set to null`, `set to mean`, and `set to median`
   three methods.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Outlier_handling.jpg)
+
 ### Missing value handling
 
 #### Description
 
-Missing data can result in biased or inaccurate results if not handled properly. Missing value handling algorithms can
-be used to impute the missing data with reasonable estimates, based on statistical methods such as mean imputation,
-median imputation. These methods can help to reduce the bias and improve the accuracy of statistical analysis.
+Missing value processing refers to the process of handling missing values in a dataset. In data analysis and machine 
+learning tasks, missing values are a common problem. The existence of missing values may be due to errors in the data 
+collection process, human omissions, or other factors. If missing values are not handled, they will affect the accuracy 
+and reliability of data analysis and machine learning models.
+
+Methods for missing value processing include deletion, imputation, and prediction. Deletion refers to directly deleting 
+data rows or columns that contain missing values. This method may reduce the amount of data but may make the dataset 
+incomplete and lose useful information. Imputation refers to using existing data to infer missing values. Imputation 
+methods include mean imputation, median imputation, regression imputation, and interpolation. Prediction refers to using
+machine learning models to predict missing values. This method requires training machine learning models with existing 
+data and then using the models to predict missing values.
+
+When choosing a missing value processing method, factors to consider include the nature of the data, the cause of data 
+missing, and the bias that processing methods may introduce. Through appropriate missing value processing methods, the 
+accuracy and reliability of data analysis and machine learning models can be improved.
 
 > [Missing data - Wikipedia](https://en.wikipedia.org/wiki/Missing_data)
 
@@ -113,14 +139,20 @@ median imputation. These methods can help to reduce the bias and improve the acc
   four methods.
 - `filling method`: missing value processing method. Currently supports `mean`, `median`, and `mode` three methods.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Missing_value_handling.jpg)
+
 ### Tail shrinkage and truncation processing
 
 #### Description
 
-Tail shrinkage and truncation processing algorithms are used to shrink the tails of a distribution. This can be useful
-when the tails of a distribution are too long, which can cause problems in statistical analysis. These algorithms can
-help to reduce the bias and improve the accuracy of statistical analysis.
-
+When there is sufficient sample data, it is common to perform shrinkage or truncation on continuous variables to eliminate
+the influence of extreme values on research. The purpose of shrinkage or truncation is to make the extreme values in the 
+dataset closer to the central value, thereby making the dataset more consistent with the normal distribution. The data 
+values that fall outside of a specific percentile range for the variable are processed after being sorted from smallest 
+to largest. The standard for processing is below the lower limit and beyond the upper limit. Shrinkage replaces these 
+values with their specific percentile values, while truncation directly deletes the values.
 
 > [Truncation (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Truncation_(statistics))
 >
@@ -135,14 +167,18 @@ help to reduce the bias and improve the accuracy of statistical analysis.
 - `processing_method`: Tail shrinkage and truncation processing method. Currently supports `delete_value`
   and `delete_row` two methods.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Tail_shrinkage_and_truncation_processing.jpg)
+
 ### Data transformation
 
 #### Description
 
-In statistics, data transformation is the application of a deterministic mathematical function to each point in a data
-set—that is, each data point z is replaced with the transformed value y = f(z), where f is a function. Transforms are
-usually applied so that the data appear to more closely meet the assumptions of a statistical inference procedure that
-is to be applied, or to improve the interpretability or appearance of graphs.
+Data transformation refers to a process of manipulating or processing the data in the original dataset to extract or 
+modify the information or features contained therein. In the fields of data analysis and machine learning, data 
+transformation is an important step in data preprocessing, which can be used for tasks such as data dimensionality 
+reduction, feature extraction, anomaly detection, and data smoothing.
 
 > [Data transformation (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Data_transformation_(statistics))
 
@@ -151,16 +187,20 @@ is to be applied, or to improve the interpretability or appearance of graphs.
 - `transform_method`: Data conversion method. Currently, [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) and
   IFFT (Inverse Fast Fourier Transform) are supported.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Data_transformation.jpg)
+
 ### Dimension reduction
 
 #### Description
 
-Data dimensionality reduction is the process of reducing the number of dimensions or variables in a high-dimensional
-dataset, while retaining the essential information. The aim is to simplify the dataset and eliminate the irrelevant or
-redundant variables, making it easier to process and analyze. The process involves transforming the data into a
-lower-dimensional space, while still preserving the key characteristics of the data. This technique is particularly
-useful for dealing with large datasets where high dimensionality can lead to issues with computational efficiency and
-overfitting.
+Dimensionality reduction refers to the process of mapping data from a high-dimensional space to a low-dimensional space 
+while preserving the essential features of the original dataset. In the field of data analysis and machine learning, 
+high-dimensional datasets often lead to a significant increase in computational complexity and difficulty in visualizing
+and interpreting the data. Therefore, dimensionality reduction can effectively reduce the dimensionality of the dataset,
+improve data processing efficiency and interpretability, and also reduce the risk of overfitting and improve the 
+generalization ability of machine learning models.
 
 > [Dimensionality reduction - Wikipedia](https://en.wikipedia.org/wiki/Dimensionality_reduction)
 
@@ -171,14 +211,26 @@ overfitting.
   and [LDA](https://en.wikipedia.org/wiki/Linear_discriminant_analysis) two methods.
 - `n_components`: Number of components to keep. Data types are numeric.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Dimension_reduction.jpg)
+
 ### Sample balancing
 
 #### Description
 
-Sample balance refers to the process of adjusting the number of samples in each category of a dataset so that they are
-more evenly distributed. This is important in machine learning and statistical analysis because imbalanced datasets can
-lead to biased results, especially when dealing with rare events or minority classes. By balancing the samples, we can
-improve the performance and accuracy of the algorithms that use the dataset.
+Sample balance refers to the adjustment of sample sizes in each category of a dataset to achieve a more even distribution.
+In machine learning and data analysis, sample balance is an important preprocessing step because imbalanced datasets can
+lead to biased results and affect the performance and accuracy of models.
+
+Sample balance can be achieved through various methods, such as undersampling, oversampling, and synthetic sampling. 
+Undersampling involves randomly removing samples from the class with a larger sample size to achieve balance. 
+Oversampling involves duplicating or synthesizing new samples for the class with a smaller sample size. Synthetic 
+sampling involves using generative models such as SMOTEENN to generate new samples to increase sample size and balance 
+different classes.
+
+Sample balance can improve model performance and accuracy while reducing bias due to imbalanced samples. However, 
+excessive sample balance may lead to overfitting, so it is necessary to adjust and balance based on specific situations.
 
 > [Oversampling and undersampling in data analysis - Wikipedia](https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis)
 
@@ -190,12 +242,26 @@ improve the performance and accuracy of the algorithms that use the dataset.
   and `combined` （[SMOTEENN](https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTEENN.html))
   three methods.
 
+#### Previews
+
+  ![](/images/data-processing/Example_Sample_balancing.jpg)
+
 ### Normalization
 
 #### Description
 
-The purpose of standardization is to make the dataset easier to compare and analyze. Standardization also helps to
-remove the units of measurement from the data, making it possible to compare variables that have different units.
+Data standardization refers to the process of transforming raw data to conform to a certain standard or specification, 
+making it easier to compare and analyze. The most common method of data standardization is to transform the data into a 
+standard normal distribution with a mean of 0 and a variance of 1, or to scale the data within a certain range.
+
+The main purpose of data standardization is to eliminate differences in units and scales among the data, making 
+comparisons between different variables more fair. For example, if two variables have vastly different ranges of values,
+the comparison between them may be subject to significant errors. Standardizing the data can eliminate such errors and 
+make the data more reliable and interpretable.
+
+Data standardization is a necessary step in many data analysis and machine learning tasks, such as clustering analysis, 
+regression analysis, and neural networks. Common methods of data standardization include z-score normalization, min-max 
+normalization, and mean-variance normalization.
 
 > [Normalization (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Normalization_(statistics))
 
@@ -203,3 +269,7 @@ remove the units of measurement from the data, making it possible to compare var
 
 - `Method`: Normalization method. Currently supports [Min_Max](https://en.wikipedia.org/wiki/Feature_scaling) and
   [Z_Score](https://en.wikipedia.org/wiki/Standard_score) two methods.
+
+#### Previews
+     
+  ![](/images/data-processing/Example_Normalization.jpg)
