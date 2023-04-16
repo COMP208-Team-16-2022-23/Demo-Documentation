@@ -3,9 +3,11 @@
 我的数据对上传的数据文档进行管理，可以上传数据，预览数据详情，下载导出等。平台为所有用户提供公开数据集 `iris.csv`
 和 `ProgAssign.csv` 。
 
-> `iris.csv` 数据集包含 150 条鸢尾花的数据，包括花萼长度、花萼宽度、花瓣长度、花瓣宽度和品种。 数据来源：[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
-> 
-> `ProgAssign.csv` 数据集包含 514 条学生数据，包括5门课程的成绩和学生的专业。 数据内容为 LCDA 团队自行构造，不代表任何真实数据。
+::: tip 提示
+`iris.csv` 数据集包含 150 条鸢尾花的数据，包括花萼长度、花萼宽度、花瓣长度、花瓣宽度和品种。 数据来源：[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+ 
+`ProgAssign.csv` 数据集包含 514 条学生数据，包括5门课程的成绩和学生的专业。 数据内容为 LCDA 团队自行构造，不代表任何真实数据。
+:::
 
 ## 上传文件
 
@@ -27,7 +29,8 @@
 - Download：可将**任何文件**下载至本地
 - Delete：可将本账户所上传的文件从平台中删除
 
-> 之后在您使用 **Data Processing** 时，新创建的处理过文件也会被添加进文件列表。如果您试图删除 **Data Processing** 
-> 项目涉及的文件，您将会收到警告。届时您将可以决定是否继续删除操作。
+::: tip 提示
+之后在您使用[数据处理](./data-processing.md)时，新创建的处理过文件也会被添加进文件列表。如果您试图删除数据处理项目涉及的文件，您将会收到警告。届时您将可以决定是否继续删除操作。
+:::
 
 ![my_data_action](/images/my-data/my_data_action.png)

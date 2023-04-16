@@ -2,7 +2,7 @@
 
 ## 在开始安装之前
 
-使用和体验 LCDA 最简单的办法：直接访问 [LCDA 官网](https://lcda-vgnazlwvxa-uw.a.run.app/) 。
+使用和体验 LCDA 最简单的办法：直接访问 [LCDA 官网](https://www.lcda.space/) 。
 
 如果你依然想要部署属于自己的 LCDA
 ，请确保你能够创建并配置以下实例：[Google Cloud Run](https://cloud.google.com/run) ， [Google Cloud Storage](https://cloud.google.com/storage) ，
@@ -129,7 +129,6 @@
 
    <CodeGroup>
    <CodeGroupItem title="Bash" active>
-   Bash:
 
    ```bash
    export FLASK_APP=app.py
@@ -140,11 +139,19 @@
    </CodeGroupItem>
 
    <CodeGroupItem title="CMD">
-   CMD:
 
    ```bash
    set FLASK_APP=app.py
    set FLASK_ENV=development
+   flask run
+   ```
+
+   </CodeGroupItem>
+   <CodeGroupItem title="Powershell">
+
+   ```bash
+   $env:FLASK_APP = "app.py"
+   $env:FLASK_ENV = "development"
    flask run
    ```
 
