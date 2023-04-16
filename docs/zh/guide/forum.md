@@ -12,7 +12,7 @@
 - 无意义内容。如随机字符，单个或几个独立的单词或短语。
 
 为了保证论坛的良好氛围，LCDA
-有权对用户发表的内容进行审查。如果发现用户发布的内容违反了[LCDA 服务条款](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc)
+有权对用户发表的内容进行审查。如果发现用户发布的内容违反了[LCDA 服务条款](https://www.lcda.space/legal/terms#ugc)
 ，LCDA 有权删除该内容。
 
 ## 界面
@@ -36,7 +36,9 @@
 
 在您登陆后，您可以在论坛主页面上所有帖子的正文下方填写评论，点击 `SUBMIT` 按钮即可发布评论。
 
-**请注意，您只能在帖子的正文下方发表评论，而不能在评论下方再发表评论。 同时，评论发布后无法再次编辑。**
+::: tip 提示
+您只能在帖子的正文下方发表评论，而不能在评论下方再发表评论。 同时，评论发布后无法再次编辑。
+:::
 
 ![Forum post](/images/forum/forum-new-comment.jpg)
 
@@ -50,7 +52,9 @@
 
 您也可以选择单击 `DELETE` 按钮以删除帖子。
 
-**请注意，删除帖子是不可逆的操作，您将无法恢复已删除的帖子。同时，删除帖子后，该帖子下的所有评论也将被删除。**
+::: warning 注意
+删除帖子是不可逆的操作，您将无法恢复已删除的帖子。同时，删除帖子后，该帖子下的所有评论也将被删除。
+:::
 
 ![Forum post](/images/forum/forum-edit.jpeg)
 
@@ -58,7 +62,9 @@
 
 在您登陆后，论坛主页面上每条由您发布的评论右侧都会显示 `DELETE` 按钮。您可以随时点击 `DELETE` 按钮删除该评论。
 
-**请注意，删除评论是不可逆的操作，您将无法恢复已删除的评论。**
+::: warning 注意
+删除评论是不可逆的操作，您将无法恢复已删除的评论。
+:::
 
 ![Forum post](/images/forum/forum-delete-comment-button.jpg)
 
@@ -75,7 +81,7 @@
 
 ![Forum post](/images/forum/forum-random-text.jpeg)
 
-### 发布了违反 [LCDA 服务条款](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc)中的内容
+### 发布了不友善内容
 
 测试内容：
 

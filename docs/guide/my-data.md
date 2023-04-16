@@ -3,13 +3,15 @@
 My Data manages data files, allowing you to upload, preview and download data. The platform provides public
 datasets `iris.csv` and `ProgAssign.csv` for all users.
 
-> The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
-> petal width, and variety. This dataset is sourced from
-> the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris).
->
-> The `ProgAssign.csv` dataset contains 514 student records, including grades for five courses and student programme.
-> Please note that the data in the `ProgAssign.csv` dataset content is constructed by the LCDA team and does not represent
-> real-world data.
+::: tip
+The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
+petal width, and variety. This dataset is sourced from
+the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris).
+
+The `ProgAssign.csv` dataset contains 514 student records, including grades for five courses and student programme.
+Please note that the data in the `ProgAssign.csv` dataset content is constructed by the LCDA team and does not represent
+real-world data.
+:::
 
 ## Upload File
 
@@ -31,8 +33,10 @@ In the file list, you can preview, download and delete files.
 - Download: You can download **any** file locally
 - Delete: You can delete **only** files uploaded or created by yourself
 
-> When you use **Data Processing**[link_TBD], processed files will be created automatically and added to the file list .
-> If you try to delete a file involved in a **Data Processing** project, you will receive a warning. You will then be
-> able to decide whether or not to proceed with the deletion operation.
+::: tip
+When you use [Data Processing](./data-processing.md), processed files will be created automatically and added to the file list .
+If you try to delete a file involved in a **Data Processing** project, you will receive a warning. You will then be
+able to decide whether or not to proceed with the deletion operation.
+:::
 
 ![my_data_action](./images/my-data/my_data_action.png)

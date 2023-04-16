@@ -9,11 +9,11 @@ effective communication, all posts and comments must be written in English.
 To maintain a positive and respectful atmosphere in the forum, please refrain from posting the following types of
 content:
 
-- Non-English content, including Chinese, Japanese, Korean, Spanish, French, and other languages.
+- Non-English content.
 - Meaningless content, such as random characters or single words or phrases.
 
 LCDA reserves the right to review all content posted in the forum. If any content is found to be in violation of the
-[LCDA Terms & Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc), LCDA reserves the right to delete the
+[LCDA Terms & Conditions](https://www.lcda.space/legal/terms#ugc), LCDA reserves the right to delete the
 content without prior notice.
 
 ## Interface
@@ -44,8 +44,10 @@ simply click on the `SUBMIT` button to publish your post.
 After logging in, you can write comments below the body of all posts on the main forum page. To do so, simply enter your
 comment in the provided text box. Once you have finished writing your comment,click the `SUBMIT` button to post it.
 
-**Please note that comments can only be added below the body of the post, and cannot be added below another comment.
-Additionally, once a comment is published, it cannot be edited.**
+::: tip
+Comments can only be added below the body of the post, and cannot be added below another comment.
+Additionally, once a comment is published, it cannot be edited.
+:::
 
 ![Forum post](./images/forum/forum-new-comment.jpg)
 
@@ -59,9 +61,10 @@ the post. This will allow you to modify the title and body of the post.
 On the page for editing a post, you can modify the title and text of the post. Once you have made the desired changes,
 click the `SUBMIT` button to update the post. Alternatively, you can click the `DELETE` button to remove the post.
 
-**It is important to note that deleting a post is an irreversible action, and you will not be able to recover a deleted
-post.
-Additionally, once a post is deleted, all comments associated with the post will also be removed.**
+::: warning
+Deleting a post is an irreversible action, and you will not be able to recover a deleted
+post. Additionally, once a post is deleted, all comments associated with the post will also be removed.
+:::
 
 ![Forum post](./images/forum/forum-edit.jpeg)
 
@@ -70,9 +73,9 @@ Additionally, once a post is deleted, all comments associated with the post will
 When you are logged in, a `DELETE` button will appear to the right of each comment that you have posted on the main
 forum page. Clicking on the `DELETE` button will allow you to delete the comment.
 
-Please note that once you delete a comment, it is irreversible and you will not be able to restore the deleted
-comment.**
-**
+::: warning
+Once you delete a comment, you will not be able to restore the deleted comment.
+:::
 
 ![Forum post](./images/forum/forum-delete-comment-button.jpg)
 
@@ -89,12 +92,12 @@ to the LCDA team at [lcda.team.2023@gmail.com](mailto:lcda.team.2023@gmail.com) 
 
 ![Forum post](/images/forum/forum-random-text.jpeg)
 
-### Posted content that violates the [LCDA Terms & Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc)
+### Unfriendly Content
 
 Test content:
 
 ![Forum post](/images/forum/forum-swear-word-editor.jpeg)
 
-Content after swear words are censored:
+Filtered content:
 
 ![Forum post](/images/forum/forum-swear-word-post.jpeg)

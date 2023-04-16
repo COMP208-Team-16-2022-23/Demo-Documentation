@@ -12,7 +12,7 @@ To access the platform, users must first authenticate themselves through the log
 
 To login, follow these steps:
 
-1. Click on the '[Login](https://lcda-vgnazlwvxa-uw.a.run.app/auth/login)' button or be redirected to the login page.
+1. Click on the '[Login](https://www.lcda.space/auth/login)' button or be redirected to the login page.
 
 2. Enter your registered email address and password.
 
@@ -29,11 +29,11 @@ To use our platform, you must first register an account.
 
 To register, follow these steps:
 
-1. Click on the '[Sign Up](https://lcda-vgnazlwvxa-uw.a.run.app/auth/register)' button.
+1. Click on the '[Sign Up](https://www.lcda.space/auth/register)' button.
 2. Enter a valid and unused username, your email address, 
 and desired password. The password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one digit.
-3. Read the [Terms and Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms) 
-and [Privacy Policy](https://lcda-vgnazlwvxa-uw.a.run.app/legal/privacy) carefully. 
+3. Read the [Terms and Conditions](https://www.lcda.space/legal/terms) 
+and [Privacy Policy](https://www.lcda.space/legal/privacy) carefully. 
 4. Check the "Agree to Terms of Use and Privacy Policy" checkbox.
 5. Click on the "Register" button.
 
@@ -45,7 +45,7 @@ Once verified, you will be redirected to the login page. You will also receive a
 
 If you have forgotten your password, follow these steps to reset it:
 
-1. Navigate to the [Account Recovery](https://lcda-vgnazlwvxa-uw.a.run.app/auth/forgot_password) page.
+1. Navigate to the [Account Recovery](https://www.lcda.space/auth/forgot_password) page.
 2. Enter the email address associated with your account.
 3. Click on the "Next" button.
 

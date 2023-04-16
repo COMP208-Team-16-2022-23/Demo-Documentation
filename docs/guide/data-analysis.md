@@ -40,7 +40,9 @@ A normality test is any statistical test for determining whether a data sample c
 - Input: One or more quantitative variables
 - Output: The results of the model test (with data satisfying/not satisfying a normal distribution)
 
+##### Example Case
 
+   ![realiability_test](/images/data-analysis/realiability_test.png)
 
 ### Questionnaire Analysis
 
@@ -66,6 +68,10 @@ When using many time series models, such as ARMA and ARIMA, the time series is r
 - Input: 1 quantitative variable for time series data
 - Output: Sequence data is smoothed at several orders of differencing
 
+##### Example Case
+
+![ADF_test](/images/data-analysis/ADF_test.png)
+
 
 
 ### Medical Statistical Model
@@ -78,6 +84,8 @@ A method for visual consistency checking. Its principle is an intuitive method t
 
 - Input: Two quantitative variables representing the two methods
 - Output: Bland-Altman graph and whether there is consistency in the approach.
+
+##### Example Case   ![Bland_Altman](/images/data-analysis/Bland_Altman.png)
 
 
 
@@ -93,7 +101,7 @@ K-Nearest Neighbors is a simple algorithm that stores all available cases and cl
 
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
-#### Parameter Options
+##### Parameter Options
 
   - Data Shuffling: Whether to shuffle data randomly
   - Training Ratio: Ratio of training data to the whole dataset
@@ -105,10 +113,12 @@ K-Nearest Neighbors is a simple algorithm that stores all available cases and cl
   - Algorithm: Algorithm used to compute the nearest neighbors. Selection values: 
     - auto: will attempt to decide the most appropriate algorithm based on the values passed
     - ball_tree: will use [`BallTree`](https://en.wikipedia.org/wiki/Ball_tree)
-    - kd_tree: will use [`KDTree`]([k-d tree - Wikipedia](https://en.wikipedia.org/wiki/K-d_tree)) 
+    - kd_tree: will use [`KDTree`](https://en.wikipedia.org/wiki/K-d_tree)
     - brute: will use a brute-force search Note: fitting on sparse input will override the setting of this parameter, using brute force
   - Leaf Size: Leaf size passed to `BallTree` or `KDTree`. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem
   - P: Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used
+
+##### Example Case   ![k_nn](/images/data-analysis/k_nn.png)
 
 #### SVM classification
 
@@ -119,7 +129,7 @@ Support vector machine (SVM) is a class of generalised linear classifiers that p
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
-#### Parameter Options
+##### Parameter Options
 
   - Data Shuffling: Whether to shuffle data randomly
   - Training Ratio: Ratio of training data to the whole dataset
@@ -129,6 +139,8 @@ Support vector machine (SVM) is a class of generalised linear classifiers that p
   - Error Convergence Conditions: Tolerance for stopping criterion
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
+##### Example Case   ![svm](/images/data-analysis/svm.png)
+
 #### Decision Tree
 
 A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
@@ -137,3 +149,5 @@ A decision tree is a flowchart-like structure in which each internal node repres
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The structure of the decision tree constructed by the model and the evaluation effect of the model classification.
+
+##### Example Case   ![decision_tree](/images/data-analysis/decision_tree.png)

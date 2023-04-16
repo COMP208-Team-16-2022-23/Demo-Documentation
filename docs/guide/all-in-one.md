@@ -66,7 +66,7 @@ beginners, data scientists, business analysts, and anyone looking to derive insi
 
 ### Before Starting the Installation
 
-The quickest way to use LCDA is to directly visit the [official website of LCDA](https://lcda-vgnazlwvxa-uw.a.run.app/).
+The quickest way to use LCDA is to directly visit the [official website of LCDA](https://www.lcda.space/).
 
 However, if you want to deploy your own LCDA, it is essential to ensure that you can create and configure the following
 instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Storage](https://cloud.google.com/storage),
@@ -88,7 +88,7 @@ you have experience with cloud services before attempting to deploy LCDA on your
 
 - [Amazon RDS](https://aws.amazon.com/rds/)
 
-### Installation and deployment steps
+### Installation and Deployment Steps
 
 This section will help you step by step from scratch to deploying the LCDA platform.
 
@@ -207,8 +207,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 9. Deploy LCDA locally
 
-   <CodeGroup>
-   <CodeGroupItem title="Bash" active>
+Bash:
 
    ```bash
    export FLASK_APP=app.py
@@ -216,9 +215,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    flask run
    ```
 
-   </CodeGroupItem>
-
-   <CodeGroupItem title="CMD">
+CMD:
 
    ```bash
    set FLASK_APP=app.py
@@ -226,8 +223,14 @@ This section will help you step by step from scratch to deploying the LCDA platf
    flask run
    ```
 
-   </CodeGroupItem>
-   </CodeGroup>
+PowerShell:
+
+   ```bash
+    $env:FLASK_APP = "app.py"
+    $env:FLASK_ENV = "development"
+    flask run
+   ```
+   
 
 You're done! Now you can visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to
 access LCDA.
@@ -249,7 +252,7 @@ To access the platform, users must first authenticate themselves through the log
 
 To login, follow these steps:
 
-1. Click on the '[Login](https://lcda-vgnazlwvxa-uw.a.run.app/auth/login)' button or be redirected to the login page.
+1. Click on the '[Login](https://www.lcda.space/auth/login)' button or be redirected to the login page.
 
 2. Enter your registered email address and password.
 
@@ -265,12 +268,12 @@ To use our platform, you must first register an account.
 
 To register, follow these steps:
 
-1. Click on the '[Sign Up](https://lcda-vgnazlwvxa-uw.a.run.app/auth/register)' button.
+1. Click on the '[Sign Up](https://www.lcda.space/auth/register)' button.
 2. Enter a valid and unused username, your email address,
    and desired password. The password must be at least 8 characters long and contain at least one uppercase letter, one
    lowercase letter, and one digit.
-3. Read the [Terms and Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms)
-   and [Privacy Policy](https://lcda-vgnazlwvxa-uw.a.run.app/legal/privacy) carefully.
+3. Read the [Terms and Conditions](https://www.lcda.space/legal/terms)
+   and [Privacy Policy](https://www.lcda.space/legal/privacy) carefully.
 4. Check the "Agree to Terms of Use and Privacy Policy" checkbox.
 5. Click on the "Register" button.
 
@@ -282,7 +285,7 @@ Once verified, you will be redirected to the login page. You will also receive a
 
 If you have forgotten your password, follow these steps to reset it:
 
-1. Navigate to the [Account Recovery](https://lcda-vgnazlwvxa-uw.a.run.app/auth/forgot_password) page.
+1. Navigate to the [Account Recovery](https://www.lcda.space/auth/forgot_password) page.
 2. Enter the email address associated with your account.
 3. Click on the "Next" button.
 
@@ -418,7 +421,7 @@ project.
 
 ### Data Processing Algorithms
 
-#### Outlier handling
+#### Outlier Handling
 
 ##### Description
 
@@ -439,7 +442,7 @@ results.
 - `Processing method`: Outlier processing method. Currently supports `set to null`, `set to mean`, and `set to median`
   three methods.
 
-#### Missing value handling
+#### Missing Value Handling
 
 ##### Description
 
@@ -455,7 +458,7 @@ median imputation. These methods can help to reduce the bias and improve the acc
   four methods.
 - `filling method`: missing value processing method. Currently supports `mean`, `median`, and `mode` three methods.
 
-#### Tail shrinkage and truncation processing
+#### Tail Shrinkage and Truncation Processing
 
 ##### Description
 
@@ -477,7 +480,7 @@ help to reduce the bias and improve the accuracy of statistical analysis.
 - `processing_method`: Tail shrinkage and truncation processing method. Currently supports `delete_value`
   and `delete_row` two methods.
 
-#### Data transformation
+#### Data Transformation
 
 ##### Description
 
@@ -493,7 +496,7 @@ is to be applied, or to improve the interpretability or appearance of graphs.
 - `transform_method`: Data conversion method. Currently, [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) and
   IFFT (Inverse Fast Fourier Transform) are supported.
 
-#### Dimension reduction
+#### Dimension Reduction
 
 ##### Description
 
@@ -513,7 +516,7 @@ overfitting.
   and [LDA](https://en.wikipedia.org/wiki/Linear_discriminant_analysis) two methods.
 - `n_components`: Number of components to keep. Data types are numeric.
 
-#### Sample balancing
+#### Sample Balancing
 
 ##### Description
 
@@ -712,11 +715,11 @@ effective communication, all posts and comments must be written in English.
 To maintain a positive and respectful atmosphere in the forum, please refrain from posting the following types of
 content:
 
-- Non-English content, including Chinese, Japanese, Korean, Spanish, French, and other languages.
+- Non-English content.
 - Meaningless content, such as random characters or single words or phrases.
 
 LCDA reserves the right to review all content posted in the forum. If any content is found to be in violation of the
-[LCDA Terms & Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc), LCDA reserves the right to delete the
+[LCDA Terms & Conditions](https://www.lcda.space/legal/terms#ugc), LCDA reserves the right to delete the
 content without prior notice.
 
 ### Interface
@@ -773,9 +776,8 @@ Additionally, once a post is deleted, all comments associated with the post will
 When you are logged in, a `DELETE` button will appear to the right of each comment that you have posted on the main
 forum page. Clicking on the `DELETE` button will allow you to delete the comment.
 
-Please note that once you delete a comment, it is irreversible and you will not be able to restore the deleted
-comment.**
-**
+**Please note that once you delete a comment, you will not be able to restore the deleted comment.**
+
 
 ![Forum post](./images/forum/forum-delete-comment-button.jpg)
 
@@ -792,13 +794,13 @@ to the LCDA team at [lcda.team.2023@gmail.com](mailto:lcda.team.2023@gmail.com) 
 
 ![Forum post](./images/forum/forum-random-text.jpeg)
 
-#### Posted content that violates the [LCDA Terms & Conditions](https://lcda-vgnazlwvxa-uw.a.run.app/legal/terms#ugc)
+#### Unfriendly Content
 
 Test content:
 
 ![Forum post](./images/forum/forum-swear-word-editor.jpeg)
 
-Content after swear words are censored:
+Filtered content:
 
 ![Forum post](./images/forum/forum-swear-word-post.jpeg)
 
@@ -807,7 +809,7 @@ Content after swear words are censored:
 Node Editor is a fully graphical data processing tool. Here you can apply multiple data processing methods to multiple
 datasets on a single page at the same time.
 
-### How to use
+### How to Use
 
 1. Once logged in, click on **Node Editor** from the top navigation bar to access the node editor
    interface.<!--can add link-->
