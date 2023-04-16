@@ -14,7 +14,7 @@
     "@condorhero/vuepress-plugin-export-pdf-v2": "latest",
     "@vuepress/client": "next",
     "@vuepress/plugin-back-to-top": "next",
-    "@vuepress/plugin-search": "next",
+    "@vuepress/plugin-search": "^2.0.0-beta.61",
     "@vuepress/theme-default": "next",
     "vue": "latest",
     "vuepress": "next"
