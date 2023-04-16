@@ -715,7 +715,7 @@ effective communication, all posts and comments must be written in English.
 To maintain a positive and respectful atmosphere in the forum, please refrain from posting the following types of
 content:
 
-- Non-English content, including Chinese, Japanese, Korean, Spanish, French, and other languages.
+- Non-English content.
 - Meaningless content, such as random characters or single words or phrases.
 
 LCDA reserves the right to review all content posted in the forum. If any content is found to be in violation of the
@@ -794,13 +794,13 @@ to the LCDA team at [lcda.team.2023@gmail.com](mailto:lcda.team.2023@gmail.com) 
 
 ![Forum post](./images/forum/forum-random-text.jpeg)
 
-#### Posted content that violates the [LCDA Terms & Conditions](https://www.lcda.space/legal/terms#ugc)
+#### Unfriendly Content
 
 Test content:
 
 ![Forum post](./images/forum/forum-swear-word-editor.jpeg)
 
-Content after swear words are censored:
+Filtered content:
 
 ![Forum post](./images/forum/forum-swear-word-post.jpeg)
 
