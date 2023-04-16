@@ -2,7 +2,7 @@
 
 ## Before Starting the Installation
 
-The quickest way to use LCDA is to directly visit the [official website of LCDA](https://lcda-vgnazlwvxa-uw.a.run.app/).
+The quickest way to use LCDA is to directly visit the [official website of LCDA](https://www.lcda.space/).
 
 However, if you want to deploy your own LCDA, it is essential to ensure that you can create and configure the following
 instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Storage](https://cloud.google.com/storage), 
@@ -158,6 +158,15 @@ This section will help you step by step from scratch to deploying the LCDA platf
    ```bash
    set FLASK_APP=app.py
    set FLASK_ENV=development
+   flask run
+   ```
+
+   </CodeGroupItem>
+   <CodeGroupItem title="Powershell">
+
+   ```bash
+   $env:FLASK_APP = "app.py"
+   $env:FLASK_ENV = "development"
    flask run
    ```
 

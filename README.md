@@ -1,6 +1,6 @@
 # Project Demonstrations
 
-**Weighting: 15%** | **no page limit**
+**Weighting: 15%**|**no page limit**
 
 - Deadline (for the submission of the supporting material): 26 April 2022; Q&A session between 26 April and 29 April 2022.
 - [Marking Guidelines](https://canvas.liverpool.ac.uk/courses/59720/pages/assessment "Assessment")
@@ -18,11 +18,11 @@ npm install
 npm run docs:dev
 ```
 
-Then open http://localhost:8080/Demo-Documentation/ in your browser.
+Then open http://localhost:8080/ in your browser.
 
 ## Documents
 
-- [Getting Started | VuePress](https://v2.vuepress.vuejs.org/guide/getting-started.html)   **Note:** install with **npm** on your personal computer is much easier if you are new to the Vue family.
+- [Getting Started | VuePress](https://v2.vuepress.vuejs.org/guide/getting-started.html) **Note:** install with **npm** on your personal computer is much easier if you are new to the Vue family.
 
 - [Basic Syntax | Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
@@ -42,22 +42,22 @@ Each team is invited to produce a 10 minute video that shows the software, produ
 
 - Some system internal features (to demonstrate the familiarity with the software)
 
-- Any special features (as appropriate):  web access; graphical presentation of statistics; the working of interesting algorithms.
+- Any special features (as appropriate):  web access; graphical presentation of statistics; the working of interesting algorithms.
 
 On the other hand it should be remembered:
 
-- There is no need to show ***everything*** (updating one kind of record may be much like another; one query is often much like another; give the flavour, but don’t get boring)
-- The video should last ***no more than*** ***10*** minutes, a full survey may not actually be possible!
+- There is no need to show ***everything*** (updating one kind of record may be much like another; one query is often much like another; give the flavour, but don’t get boring)
+- The video should last ***no more than*** ***10*** minutes, a full survey may not actually be possible!
 
 Slides and/or screen recording can be used to produce this. As a consequence it is not necessary for the members of the team to be visible in the video. It is understood that, unless otherwise mentioned clearly in the video, ALL people in the team have contributed to it.
 
-The video is to be uploaded to [https://stream.liv.ac.uk/](https://stream.liv.ac.uk/) as explained in the file [comp208_vstream_guide.png](https://canvas.liverpool.ac.uk/courses/59720/files/8339481?wrap=1 "Link").
+The video is to be uploaded to [https://stream.liv.ac.uk/](https://stream.liv.ac.uk/) as explained in the file [comp208_vstream_guide.png](https://canvas.liverpool.ac.uk/courses/59720/files/8339481?wrap=1 "Link").
 
-A part from submitting a video as described above, each team is required to provide additional documentation as described [here](https://canvas.liverpool.ac.uk/courses/59720/assignments/219445 "Demo Documentation").
+Apart from submitting a video as described above, each team is required to provide additional documentation as described [here](https://canvas.liverpool.ac.uk/courses/59720/assignments/219445 "Demo Documentation").
 
 ## Discussion Session
 
-During the period mentioned at the top of the page, there will be a Q&A meeting with a member of the teaching team (the *reviewer*) in which scope and limits of the implemented system will be assessed. All members of the team must attend this event. Absence will be penalized in the usual way.
+During the period mentioned at the top of the page, there will be a Q&A meeting with a member of the teaching team (the *reviewer*) in which scope and limits of the implemented system will be assessed. All members of the team must attend this event. Absence will be penalized in the usual way.
 
 This event could be run on-campus or using Zoom, Skype or Microsoft Teams, or any other on-line platform allowing video conferencing. The specific arrangements will be agreed with the reviewer.
 

@@ -17,6 +17,7 @@ export default defineUserConfig({
         },
 
     },
+    head: [['link', {rel: 'icon', href: '/images/favicon.ico'}]],
     // set title color to red
 
     plugins: [
@@ -38,7 +39,12 @@ export default defineUserConfig({
     theme: defaultTheme({
         logo: '/images/hero.png',
         logoDark: '/images/hero-white.png',
-        repo: 'COMP208-Team-16-2022-23/Demo-Documentation',
+        repo: 'COMP208-Team-16-2022-23/Group-Project-Code',
+        docsRepo: 'COMP208-Team-16-2022-23/Demo-Documentation',
+        docsBranch: 'main',
+        docsDir: 'docs',
+        editLinkText: 'Edit this page on GitHub',
+        editLinkPattern: ':repo/edit/:branch/:path',
         locales: {
             '/': {
                 selectLanguageName: 'English',
