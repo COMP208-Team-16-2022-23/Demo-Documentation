@@ -113,7 +113,7 @@ K-Nearest Neighbors is a simple algorithm that stores all available cases and cl
   - Algorithm: Algorithm used to compute the nearest neighbors. Selection values: 
     - auto: will attempt to decide the most appropriate algorithm based on the values passed
     - ball_tree: will use [`BallTree`](https://en.wikipedia.org/wiki/Ball_tree)
-    - kd_tree: will use [`KDTree`]([k-d tree - Wikipedia](https://en.wikipedia.org/wiki/K-d_tree)) 
+    - kd_tree: will use [`KDTree`](https://en.wikipedia.org/wiki/K-d_tree)
     - brute: will use a brute-force search Note: fitting on sparse input will override the setting of this parameter, using brute force
   - Leaf Size: Leaf size passed to `BallTree` or `KDTree`. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem
   - P: Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used
