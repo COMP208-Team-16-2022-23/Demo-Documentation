@@ -10,5 +10,5 @@ actions:
   - text: 用户手册
     link: /zh/guide/my-data.html
     type: secondary
-footer: Copyright © 2023 LCDA Team.
+footer: © 2023 LCDA Team
 ---

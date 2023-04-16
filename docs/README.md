@@ -10,5 +10,5 @@ actions:
   - text: User Manual
     link: /guide/my-data.html
     type: secondary
-footer: Copyright © 2023 LCDA Team.
+footer: © 2023 LCDA Team
 ---
