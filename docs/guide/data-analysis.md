@@ -44,18 +44,18 @@ A normality test is any statistical test for determining whether a data sample c
 
    ![realiability_test](/images/data-analysis/realiability_test.png)
 
-## Comprehensive Evaluation
+### Comprehensive Evaluation
 
-### CRITIC weighting method
+#### CRITIC weighting method
 
 The CRITIC weighting method is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, the CRITIC method eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
 
-### Input and Output
+##### Input and Output
 - Input: at least two or more quantitative variables (can be positive or negative, but do not standardize)
 
--Output: Enter the values of the weights corresponding to the quantitative variables
+- Output: Enter the values of the weights corresponding to the quantitative variables
 
-#### Example Case
+##### Example Case
 
    ![decision_matrix](/images/data-analysis/decision_matrix.png)
 
