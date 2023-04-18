@@ -14,6 +14,9 @@
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
   或 [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
+    如果你使用`Conda`虚拟环境
+
+- [Python](https://www.python.org/) v3.10 如果你使用`venv`虚拟环境
 
 - [Git](https://git-scm.com/downloads) v2.30+
 
@@ -46,32 +49,56 @@
    cd Group-Project-Code
    ```
 
-4. 创建 Python 虚拟环境
+4. 创建并激活Python虚拟环境
 
-   你可以创建 Conda 虚拟环境或其他虚拟环境，如 virtualenv 。后者需要的 `requirements.txt` 文件可以在项目根目录中找到。这里我们使用
-   Conda 创建虚拟环境。
+   你可以选择`venv`或`conda`来创建一个虚拟环境。
 
-   这一步会自动帮你创建一个名为 `COMP208` ， Python 版本为 3.10 的 Conda 虚拟环境。 此步骤需要几分钟时间，请耐心等待。
+- `venv`虚拟环境 
 
+   这个命令将在当前目录下创建一个虚拟环境。
+   ```bash
+   python -m venv .
+   ```
+  
+   激活虚拟环境
+
+    <CodeGroup>
+   <CodeGroupItem title="Bash" active>
+  
+   ```bash
+   source ./bin/activate
+  ```
+  
+    </CodeGroupItem>
+  
+    <CodeGroupItem title="CMD">
+  
+    ```bash
+  .\Scripts\activate.bat
+   ```
+  
+    </CodeGroupItem>
+    </CodeGroup>
+
+  安装所需的软件包
+
+    ```bash
+   pip install -r requirements.txt
+   ```
+
+- `Conda`虚拟环境
+
+   创建一个名为 "COMP208 "的Conda虚拟环境，Python版本为3.10。 
    ```bash
    conda env create -f ./misc/environment.yml
    ```
-
-5. 激活虚拟环境
-
+  
+   激活Conda虚拟环境
    ```bash
    conda activate COMP208
    ```
 
-6. 使用 Pip 补充安装 Conda 仓库中缺失的包
-
-   由于 `psython` 和 `better-profanity` 两个包的开发者没有维护 Conda 源，因此使用 Pip 补充安装。
-
-   ```bash
-   pip install psython better-profanity
-   ```
-
-7. 配置云服务
+5. 配置云服务
 
    LCDA 设计初衷就是为了在云端部署，想要顺利运行 LCDA ，配置云服务是必不可少的一部分。各个云服务配置教程请参考其官方文档，本文不再重复赘述。
 
@@ -85,7 +112,7 @@
     - [Google Cloud Run](https://cloud.google.com/run)：LCDA 使用 Google Cloud Run 托管并部署网站。详细的 Google Cloud Run
       使用教程请参考[官方文档](https://cloud.google.com/run/docs)。
 
-8. 配置  `secret.py`
+6. 配置  `secret.py`
 
    在部署和运行LCDA之前，你需要在 `/secret.py` 文件中配置相关信息。这个文件包含敏感信息，如API密钥、数据库密码和其他应用程序正常运行所需的秘密。在这种情况下，它还包括相关的谷歌云信息。
 
@@ -125,7 +152,7 @@
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
 
-9. 本地部署 LCDA
+7. 本地部署 LCDA
 
    <CodeGroup>
    <CodeGroupItem title="Bash" active>
