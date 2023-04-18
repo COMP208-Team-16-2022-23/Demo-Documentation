@@ -16,7 +16,7 @@
   或 [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
     如果你使用`Conda`虚拟环境
 
-- [Python](https://www.python.org/) v3.10（推荐） v3.7（最低） 如果你使用`venv`虚拟环境
+- [Python](https://www.python.org/) v3.7+ 如果你使用`venv`虚拟环境
 
 - [Git](https://git-scm.com/downloads) v2.30+
 

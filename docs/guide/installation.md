@@ -17,7 +17,7 @@ you have experience with cloud services before attempting to deploy LCDA on your
   or [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
   if you use `Conda` virtual environment
 
-- [Python](https://www.python.org/) v3.10 (recommended) v3.7 (minimum) if you use `venv` virtual environment
+- [Python](https://www.python.org/) v3.7+ if you use `venv` virtual environment
 
 - [Git](https://git-scm.com/downloads) v2.30+
 
