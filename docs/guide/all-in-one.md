@@ -244,29 +244,29 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 7. Deploy LCDA locally
 
-Bash:
-
-   ```bash
-   export FLASK_APP=app.py
-   export FLASK_ENV=development
-   flask run
+    Bash:
+    
+    ```bash
+    export FLASK_APP=app.py
+    export FLASK_ENV=development
+    flask run
    ```
-
-CMD:
-
-   ```bash
-   set FLASK_APP=app.py
-   set FLASK_ENV=development
-   flask run
-   ```
-
-PowerShell:
-
-   ```bash
+    
+    CMD:
+    
+    ```bash
+    set FLASK_APP=app.py
+    set FLASK_ENV=development
+    flask run
+    ```
+    
+    PowerShell:
+    
+    ```bash
     $env:FLASK_APP = "app.py"
     $env:FLASK_ENV = "development"
     flask run
-   ```
+    ```
    
 
 You're done! Now you can visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to
