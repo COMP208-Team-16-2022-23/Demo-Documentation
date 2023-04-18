@@ -14,7 +14,7 @@
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
   或 [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
-    如果你使用`Conda`虚拟环境
+  如果你使用`Conda`虚拟环境
 
 - [Python](https://www.python.org/) v3.7+ 如果你使用`venv`虚拟环境
 
@@ -51,48 +51,54 @@
 
 4. 创建并激活Python虚拟环境
 
-   你可以选择`venv`或`conda`来创建一个虚拟环境。
+   你可以选择 `venv` 或 `conda` 来创建一个虚拟环境。
 
-- `venv`虚拟环境 
+::: tip 提示
+- `venv` 适合用于**短期测试**，可随项目文件夹一起删除，不会影响系统环境。
+- `conda` 适合用于**长期开发**，拥有更加完善的包管理功能和环境管理功能。
+:::
+
+
+   ### `venv`虚拟环境
 
    这个命令将在当前目录下创建一个虚拟环境。
-   ```bash
-   python -m venv .
-   ```
-  
+    ```bash
+    python -m venv .
+    ```
+
    激活虚拟环境
 
-    <CodeGroup>
+   <CodeGroup>
    <CodeGroupItem title="Bash" active>
-  
+
    ```bash
    source ./bin/activate
-  ```
-  
-    </CodeGroupItem>
-  
-    <CodeGroupItem title="CMD">
-  
-    ```bash
-  .\Scripts\activate.bat
    ```
-  
-    </CodeGroupItem>
-    </CodeGroup>
 
-  安装所需的软件包
+   </CodeGroupItem>
 
-    ```bash
+   <CodeGroupItem title="CMD">
+
+   ```bash
+   .\Scripts\activate.bat
+   ```
+
+   </CodeGroupItem>
+   </CodeGroup>
+
+   安装所需的软件包
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-- `Conda`虚拟环境
-
-   创建一个名为 "COMP208 "的Conda虚拟环境，Python版本为3.10。 
+   ### `Conda`虚拟环境
+   
+   创建一个名为 "COMP208 "的Conda虚拟环境，Python版本为3.10。
    ```bash
    conda env create -f ./misc/environment.yml
    ```
-  
+
    激活Conda虚拟环境
    ```bash
    conda activate COMP208

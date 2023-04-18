@@ -12,6 +12,17 @@ Haoran Lu, Jiaqi Liao, Jiawei Li, Zhan Jin, Ziqiu Jiang
 > As our website is a serverless architecture, this may cause the site to take longer to load.
 > We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation and Deployment Guide](#installation-and-deployment-guide)
+- [Authentication of Users](#authentication-of-users)
+- [My Data](#my-data)
+- [Data Processing](#data-processing)
+- [Data Analysis](#data-analysis)
+- [Forum](#forum)
+- [Node Editor](#node-editor)
+
 ## Introduction
 
 Low-Code Data Analysis (LCDA) is a tool designed to simplify data analysis by minimizing programming requirements. With
@@ -113,18 +124,51 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 4. Create a Python virtual environment
 
-   You can create a conda virtual environment or another virtual environment such as virtualenv.
-   The latter requires the requirements.txt file which can be found in the project root. Here we use conda to create a
-   virtual environment.
+    You can choose either `venv` or `conda` to create a virtual environment.
 
-   In this step, we will create a Conda virtual environment named `COMP208` with Python version 3.10. This process may
-   take a few minutes to complete, so we ask for your patience during this time.
+    > - `venv` environment is suitable for **short-term testing** and can be deleted along with the project folder without
+      affecting the system environment.
+    > 
+    > - `conda` environment is suitable for **long-term development** as it offers more comprehensive package
+      management and environment management functions.
+
+   #### `venv` virtual environment
+
+   This command will create a virtual environment in the current directory.
+
+   ```bash
+   python -m venv .
+   ```
+
+   Activate the virtual environment
+
+   - Bash:
+
+   ```bash
+   source ./bin/activate
+   ```
+
+    - CMD:
+
+   ```bash
+   .\Scripts\activate.bat
+   ```
+
+   Install the required packages
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   #### `Conda` virtual environment
+
+   Create a Conda virtual environment named `COMP208` with Python version 3.10.
 
    ```bash
    conda env create -f ./misc/environment.yml
    ```
 
-5. Activate the virtual environment
+   Activate Conda virtual environment
 
    ```bash
    conda activate COMP208

@@ -5,11 +5,11 @@
 The quickest way to use LCDA is to directly visit the [official website of LCDA](https://www.lcda.space/).
 
 However, if you want to deploy your own LCDA, it is essential to ensure that you can create and configure the following
-instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Storage](https://cloud.google.com/storage), 
+instances: [Google Cloud Run](https://cloud.google.com/run), [Google Cloud Storage](https://cloud.google.com/storage),
 and a publicly accessible database such as [Amazon RDS](https://aws.amazon.com/rds/).
 
 Please note that deploying LCDA in the cloud requires a certain level of technical expertise, and it is recommended that
-you have experience with cloud services before attempting to deploy LCDA on your own. 
+you have experience with cloud services before attempting to deploy LCDA on your own.
 
 ## Prerequisites
 
@@ -54,47 +54,59 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
    You can choose either `venv` or `conda` to create a virtual environment.
 
-- `venv` virtual environment 
+::: tip
 
-   This command will create a virtual environment in the current directory. 
+ - `venv` environment is suitable for **short-term testing** and can be deleted along with the project folder without
+   affecting the system environment.
+ - `conda` environment is suitable for **long-term development** as it offers more comprehensive package
+   management and environment management functions.
+ :::
+
+   ### `venv` virtual environment
+
+   This command will create a virtual environment in the current directory.
+
    ```bash
-   python -m venv .
+      python -m venv .
    ```
-  
+
    Activate the virtual environment
 
-    <CodeGroup>
+   <CodeGroup>
+
    <CodeGroupItem title="Bash" active>
-  
+
    ```bash
-   source ./bin/activate
-  ```
-  
-    </CodeGroupItem>
-  
-    <CodeGroupItem title="CMD">
-  
-    ```bash
-  .\Scripts\activate.bat
-   ```
-  
-    </CodeGroupItem>
-    </CodeGroup>
-
-  Install the required packages
-
-    ```bash
-   pip install -r requirements.txt
+      source ./bin/activate
    ```
 
-- `Conda` virtual environment
+   </CodeGroupItem>
 
-   Create a Conda virtual environment named `COMP208` with Python version 3.10. 
+   <CodeGroupItem title="CMD">
+
+   ```bash
+     .\Scripts\activate.bat
+   ```
+
+   </CodeGroupItem>
+   </CodeGroup>
+
+   Install the required packages
+
+   ```bash
+     pip install -r requirements.txt
+   ```
+
+   ### `Conda` virtual environment
+
+   Create a Conda virtual environment named `COMP208` with Python version 3.10.
+
    ```bash
    conda env create -f ./misc/environment.yml
    ```
-  
+
    Activate Conda virtual environment
+
    ```bash
    conda activate COMP208
    ```
