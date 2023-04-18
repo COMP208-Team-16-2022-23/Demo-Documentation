@@ -63,15 +63,7 @@
    conda activate COMP208
    ```
 
-6. 使用 Pip 补充安装 Conda 仓库中缺失的包
-
-   由于 `psython` 和 `better-profanity` 两个包的开发者没有维护 Conda 源，因此使用 Pip 补充安装。
-
-   ```bash
-   pip install psython better-profanity
-   ```
-
-7. 配置云服务
+6. 配置云服务
 
    LCDA 设计初衷就是为了在云端部署，想要顺利运行 LCDA ，配置云服务是必不可少的一部分。各个云服务配置教程请参考其官方文档，本文不再重复赘述。
 
@@ -85,7 +77,7 @@
     - [Google Cloud Run](https://cloud.google.com/run)：LCDA 使用 Google Cloud Run 托管并部署网站。详细的 Google Cloud Run
       使用教程请参考[官方文档](https://cloud.google.com/run/docs)。
 
-8. 配置  `secret.py`
+7. 配置  `secret.py`
 
    在部署和运行LCDA之前，你需要在 `/secret.py` 文件中配置相关信息。这个文件包含敏感信息，如API密钥、数据库密码和其他应用程序正常运行所需的秘密。在这种情况下，它还包括相关的谷歌云信息。
 
@@ -125,7 +117,7 @@
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
 
-9. 本地部署 LCDA
+8. 本地部署 LCDA
 
    <CodeGroup>
    <CodeGroupItem title="Bash" active>

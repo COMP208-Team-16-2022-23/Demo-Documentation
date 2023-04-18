@@ -65,16 +65,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    conda activate COMP208
    ```
 
-6. Installing Missing Packages from Conda Repositories Using Pip
-
-   In some cases, certain packages such as `psython` and `better-profanity` may not be available on the Conda source. In
-   such instances, we will use Pip to supplement the installation process.
-
-   ```bash
-   pip install psython better-profanity
-   ```
-
-7. Configuring Google Cloud
+6. Configuring Google Cloud
 
    LCDA was originally designed to be deployed in the cloud. Therefore, configuring cloud services is an essential part
    of running LCDA smoothly. For each cloud service configuration tutorial, please refer to its official documentation,
@@ -98,7 +89,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    Do not worry, many cloud service providers offer users a certain amount of free trial quota. If LCDA is only used for
    testing, there will be no additional expenses.
 
-8. Configuring `/secret.py`
+7. Configuring `/secret.py`
 
    Before you can deploy and run LCDA, you need to configure the `/secret.py` file with relevant information. This file
    contains sensitive information such as API keys, database passwords, and other secrets that are required for the
@@ -140,7 +131,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
    ```
 
-9. Deploy LCDA locally
+8. Deploy LCDA locally
 
    <CodeGroup>
    <CodeGroupItem title="Bash" active>
