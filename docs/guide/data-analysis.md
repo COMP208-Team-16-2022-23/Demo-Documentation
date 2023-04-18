@@ -44,6 +44,21 @@ A normality test is any statistical test for determining whether a data sample c
 
    ![realiability_test](/images/data-analysis/realiability_test.png)
 
+### Comprehensive Evaluation
+
+#### CRITIC weighting method
+
+The CRITIC weighting method is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, the CRITIC method eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
+
+##### Input and Output
+- Input: at least two or more quantitative variables (can be positive or negative, but do not standardize)
+
+- Output: Enter the values of the weights corresponding to the quantitative variables
+
+##### Example Case
+
+   ![decision_matrix](/images/data-analysis/decision_matrix.png)
+
 ### Questionnaire Analysis
 
 #### Reliability Analysis
@@ -141,13 +156,3 @@ Support vector machine (SVM) is a class of generalised linear classifiers that p
 
 ##### Example Case   ![svm](/images/data-analysis/svm.png)
 
-#### Decision Tree
-
-A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
-
-##### Input and Output
-
-- Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
-- Output: The structure of the decision tree constructed by the model and the evaluation effect of the model classification.
-
-##### Example Case   ![decision_tree](/images/data-analysis/decision_tree.png)
