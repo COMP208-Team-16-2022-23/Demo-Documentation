@@ -56,60 +56,60 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 ::: tip
 
- - `venv` environment is suitable for **short-term testing** and can be deleted along with the project folder without
-   affecting the system environment.
- - `conda` environment is suitable for **long-term development** as it offers more comprehensive package
-   management and environment management functions.
- :::
+- `venv` environment is suitable for **short-term testing** and can be deleted along with the project folder without
+  affecting the system environment.
+- `conda` environment is suitable for **long-term development** as it offers more comprehensive package
+  management and environment management functions.
+:::
 
-   ### `venv` virtual environment
+  ### `venv` virtual environment
 
-   This command will create a virtual environment in the current directory.
+  This command will create a virtual environment in the current directory.
 
-   ```bash
-      python -m venv .
-   ```
+  ```bash
+  python -m venv .
+  ```
 
-   Activate the virtual environment
+  Activate the virtual environment
 
-   <CodeGroup>
+  <CodeGroup>
 
-   <CodeGroupItem title="Bash" active>
+  <CodeGroupItem title="Bash" active>
 
-   ```bash
-      source ./bin/activate
-   ```
+  ```bash
+  source ./bin/activate
+  ```
 
-   </CodeGroupItem>
+  </CodeGroupItem>
 
-   <CodeGroupItem title="CMD">
+  <CodeGroupItem title="CMD">
 
-   ```bash
-     .\Scripts\activate.bat
-   ```
+  ```bash
+  .\Scripts\activate.bat
+  ```
 
-   </CodeGroupItem>
-   </CodeGroup>
+  </CodeGroupItem>
+  </CodeGroup>
 
-   Install the required packages
+  Install the required packages
 
-   ```bash
-     pip install -r requirements.txt
-   ```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-   ### `Conda` virtual environment
+  ### `Conda` virtual environment
 
-   Create a Conda virtual environment named `COMP208` with Python version 3.10.
+  Create a Conda virtual environment named `COMP208` with Python version 3.10.
 
-   ```bash
-   conda env create -f ./misc/environment.yml
-   ```
+  ```bash
+  conda env create -f ./misc/environment.yml
+  ```
 
-   Activate Conda virtual environment
+  Activate Conda virtual environment
 
-   ```bash
-   conda activate COMP208
-   ```
+  ```bash
+  conda activate COMP208
+  ```
 
 5. Configuring Google Cloud
 
