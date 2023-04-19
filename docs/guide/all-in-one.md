@@ -740,6 +740,39 @@ samples.
   - Error Convergence Conditions: Tolerance for stopping criterion
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
+#### Decision Tree
+
+A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
+
+##### Input and Output
+
+- Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
+- Output: The classification results of the model and the evaluation effect of the model classification.
+
+##### Parameter Options
+
+  - Data Shuffling: Whether to shuffle data randomly
+  - Training Ratio: Ratio of training data to the whole dataset
+  - Cross Validation:  The number of equal sized subsamples randomly partitioned from the original sample. Each subsample will be retained as the validation data for testing the model, and the remaining subsamples will be used as training data
+  - Criterion: The function to measure the quality of a split. Supported criteria are:
+    - gini: for the Gini impurity 
+    - entropy: for the Shannon information gain
+  - Splitter: The strategy used to choose the split at each node. Supported strategies:
+    - best: choose the best split
+    - random: choose the best random split
+  - Min Samples Split: The minimum number of samples required to split an internal node: 
+    - If int, then consider `Min Samples Split` as the minimum number.
+    - If float, then `Min Samples Split` is a fraction and `ceil(Min Samples Split * n_samples)` are the minimum number of samples for each split.
+  - Min Samples Leaf: The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least `Min Samples Leaf` training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression. 
+    - If int, then consider `Min Samples Leaf` as the minimum number.
+    - If float, then `Min Samples Leaf` is a fraction and `ceil(Min Samples Leaf* n_samples)` are the minimum number of samples for each node. .. versionchanged:: 0.18 Added float values for fractions.
+  - Max Depth: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than `Min Samples Split` samples.
+  - Max leaf nodes: Grow a tree with `Max leaf nodes` in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
+
+##### Example Case
+
+![decision_tree](/images/data-analysis/decision_tree.png)
+
 
 
 ## Forum
