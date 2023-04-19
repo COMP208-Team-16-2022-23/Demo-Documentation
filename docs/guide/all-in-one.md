@@ -16,6 +16,8 @@ Haoran Lu, Jiaqi Liao, Jiawei Li, Zhan Jin, Ziqiu Jiang
 
 [TOC]
 
+
+
 ## Introduction
 
 Low-Code Data Analysis (LCDA) is a tool designed to simplify data analysis by minimizing programming requirements. With
@@ -616,6 +618,18 @@ This chapter will tell you how to analyze data with LCDA, with all the informati
 
 ### Algorithms
 
+#### Comprehensive Evaluation
+
+##### CRITIC weighting method
+
+The CRITIC weighting method is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, the CRITIC method eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
+
+###### Input and Output
+
+- Input: at least two or more quantitative variables (can be positive or negative, but do not standardize)
+
+- Output: Enter the values of the weights corresponding to the quantitative variables
+
 #### Descriptive Statistics
 
 ##### Normality Test
@@ -722,17 +736,7 @@ samples.
   - Error Convergence Conditions: Tolerance for stopping criterion
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
-##### Decision Tree
 
-A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch
-represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all
-attributes).
-
-###### Input and Output
-
-- Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
-- Output: The structure of the decision tree constructed by the model and the evaluation effect of the model
-  classification.
 
 ## Forum
 
@@ -862,22 +866,22 @@ datasets on a single page at the same time.
     - At least one output node must be included in a flow to activate it. Otherwise, the flow will not run
 
     Next, we will use a Data Node, a Column Selection Node, a Normalization Node, and an End Process Node to build a simple
-data processing flow
+    data processing flow
 
     ![process_preparation](./images/node-editor/process_preparation.png)
 
     Next, we will connect the four nodes in series to activate them all, and select the iris.csv dataset from the public
-dataset for processing in node Data. It can be seen that the column names of iris.csv have been displayed in the
-ColumnSelectionNode
+    dataset for processing in node Data. It can be seen that the column names of iris.csv have been displayed in the
+    ColumnSelectionNode
 
     ![process_1step](./images/node-editor/process_1step.png)
 
     In the ColumnSelectionNode, we fill in `sepal.length`, select the normalization method as Min-Max in the Normalization
-Node, set the new filename as `sepal.length-minmax,` and finally connect Data and Normalization to complete the
-processing flow.
+    Node, set the new filename as `sepal.length-minmax,` and finally connect Data and Normalization to complete the
+    processing flow.
 
     The processing result will be uploaded to your file space as `sepal.length-minmax.csv`, which can be viewed in `My
-Data`.
+    Data`.
 
     ![process_2step](./images/node-editor/process_2step.png)
 
