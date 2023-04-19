@@ -42,7 +42,9 @@ A normality test is any statistical test for determining whether a data sample c
 
 ##### Example Case
 
-   ![realiability_test](/images/data-analysis/realiability_test.png)
+   ![normality_test](/images/data-analysis/normality_test.png)
+
+
 
 ### Comprehensive Evaluation
 
@@ -57,7 +59,9 @@ The CRITIC weighting method is an objective weighting method. The idea is to use
 
 ##### Example Case
 
-   ![decision_matrix](/images/data-analysis/decision_matrix.png)
+![decision_matrix](/images/data-analysis/decision_matrix.png)
+
+
 
 ### Questionnaire Analysis
 
@@ -69,6 +73,10 @@ Reliability analysis is mainly used to examine the stability and consistency of 
 
 - Input: At least two or more quantitative variables or ordered fixed categories of variables, generally requiring data to be scale data
 - Output: Reliability of the reliability of the collection questionnaire scales
+
+##### Example Case
+
+![realiability_test](/images/data-analysis/realiability_test.png)
 
 
 
@@ -155,4 +163,35 @@ Support vector machine (SVM) is a class of generalised linear classifiers that p
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
 ##### Example Case   ![svm](/images/data-analysis/svm.png)
+
+#### Decision Tree
+
+A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
+
+##### Input and Output
+
+- Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
+- Output: The classification results of the model and the evaluation effect of the model classification.
+
+##### Parameter Options
+
+  - Data Shuffling: Whether to shuffle data randomly
+  - Training Ratio: Ratio of training data to the whole dataset
+  - Cross Validation:  The number of equal sized subsamples randomly partitioned from the original sample. Each subsample will be retained as the validation data for testing the model, and the remaining subsamples will be used as training data
+  - Criterion: The function to measure the quality of a split. Supported criteria are:
+    - gini: for the Gini impurity 
+    - entropy: for the Shannon information gain
+  - Splitter: The strategy used to choose the split at each node. Supported strategies:
+    - best: choose the best split
+    - random: choose the best random split
+  - Min Samples Split: The minimum number of samples required to split an internal node: 
+    - If int, then consider `min_samples_split` as the minimum number.
+    - If float, then `min_samples_split` is a fraction and `ceil(min_samples_split * n_samples)` are the minimum number of samples for each split.
+  - Min Samples Leaf: The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least `min_samples_leaf` training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression. 
+    - If int, then consider `min_samples_leaf` as the minimum number.
+    - If float, then `min_samples_leaf` is a fraction and `ceil(min_samples_leaf * n_samples)` are the minimum number of samples for each node. .. versionchanged:: 0.18 Added float values for fractions.
+  - Max Depth: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than `min_samples_split` samples.
+  - Max leaf nodes: Grow a tree with `max_leaf_nodes` in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
+
+##### Example Case
 
