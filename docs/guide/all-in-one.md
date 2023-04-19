@@ -5,9 +5,13 @@
 Haoran Lu, Jiaqi Liao, Jiawei Li, Zhan Jin, Ziqiu Jiang
 
 
-**Official Website**
+**Project Website**
 
 [lcda.space](http://lcda.space)
+
+**Online Documentation**
+
+This user manual is also available online at [guide.lcda.space](http://guide.lcda.space).
 
 > As our website is a serverless architecture, this may cause the site to take longer to load.
 > We apologise for any inconvenience this may cause you and ask for your patience and understanding.
