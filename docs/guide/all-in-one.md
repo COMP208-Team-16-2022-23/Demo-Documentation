@@ -14,14 +14,7 @@ Haoran Lu, Jiaqi Liao, Jiawei Li, Zhan Jin, Ziqiu Jiang
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation and Deployment Guide](#installation-and-deployment-guide)
-- [Authentication of Users](#authentication-of-users)
-- [My Data](#my-data)
-- [Data Processing](#data-processing)
-- [Data Analysis](#data-analysis)
-- [Forum](#forum)
-- [Node Editor](#node-editor)
+[TOC]
 
 ## Introduction
 
@@ -33,7 +26,7 @@ to derive insights from data.
 
 The LCDA platform was developed with the aim of addressing the challenges faced by beginners when dealing with the
 complicated terminologies associated with artificial intelligence. The LCDA team, comprised of members who took
-an [introductory course in Artificial Intelligence]([Module Catalogues](http://modules.xjtlu.edu.cn/?mod_code=INT104))
+an [introductory course in Artificial Intelligence](http://modules.xjtlu.edu.cn/?mod_code=INT104)
 during their undergraduate Year 1 studies, understands the difficulty of learning AI from scratch. To make the process
 less intimidating for beginners, the team decided to create a website that allows users to explore the world of AI
 without having to install any software. Currently, the platform is in the demo stage and is continuously being improved
@@ -251,17 +244,17 @@ This section will help you step by step from scratch to deploying the LCDA platf
     export FLASK_ENV=development
     flask run
    ```
-    
+   
     CMD:
-    
+   
     ```bash
     set FLASK_APP=app.py
     set FLASK_ENV=development
     flask run
     ```
-    
+   
     PowerShell:
-    
+   
     ```bash
     $env:FLASK_APP = "app.py"
     $env:FLASK_ENV = "development"
@@ -853,9 +846,9 @@ datasets on a single page at the same time.
 
 2. Right-click on any blank space to call out a list of nodes and left-click on the node name to create the node.
 
-    <img src="./images/node-editor/creating_nodes.png" style="zoom: 67%;" />
-
-    <img src="https://s2.loli.net/2023/04/12/jyQYsKrTqDHOJNd.png" alt="creation_result" style="zoom: 67%;" />
+    ![creating_nodes](./images/node-editor/creating_nodes.png)
+    
+    ![creation_result](./images/node-editor/creation_result.png)
 
    The nodes to create can be divided functionally into three categories: data nodes, processing nodes and output nodes.
    For a more detailed description of the nodes see [List of Nodes](#list-of-nodes).
@@ -868,27 +861,25 @@ datasets on a single page at the same time.
       multiple nodes, which means that branches can exist in a flow
     - At least one output node must be included in a flow to activate it. Otherwise, the flow will not run
 
-Next, we will use a Data Node, a Column Selection Node, a Normalization Node, and an End Process Node to build a simple
+    Next, we will use a Data Node, a Column Selection Node, a Normalization Node, and an End Process Node to build a simple
 data processing flow
 
-<img src="https://s2.loli.net/2023/04/12/KTYe615UVSAGc2D.png" alt="process_preparation" style="zoom: 67%;" />
+    ![process_preparation](./images/node-editor/process_preparation.png)
 
-
-
-Next, we will connect the four nodes in series to activate them all, and select the iris.csv dataset from the public
+    Next, we will connect the four nodes in series to activate them all, and select the iris.csv dataset from the public
 dataset for processing in node Data. It can be seen that the column names of iris.csv have been displayed in the
 ColumnSelectionNode
 
-<img src="https://s2.loli.net/2023/04/12/JPptOHZLS6Qlwa1.png" alt="process_1step" style="zoom: 67%;" />
+    ![process_1step](./images/node-editor/process_1step.png)
 
-In the ColumnSelectionNode, we fill in `sepal.length`, select the normalization method as Min-Max in the Normalization
+    In the ColumnSelectionNode, we fill in `sepal.length`, select the normalization method as Min-Max in the Normalization
 Node, set the new filename as `sepal.length-minmax,` and finally connect Data and Normalization to complete the
 processing flow.
 
-The processing result will be uploaded to your file space as `sepal.length-minmax.csv`, which can be viewed in `My
+    The processing result will be uploaded to your file space as `sepal.length-minmax.csv`, which can be viewed in `My
 Data`.
 
-<img src="https://s2.loli.net/2023/04/12/ZxXwWjh1BCFmdI7.png" alt="process_2step" style="zoom: 67%;" />
+    ![process_2step](./images/node-editor/process_2step.png)
 
 ### List of Nodes
 
