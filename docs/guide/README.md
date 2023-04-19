@@ -5,7 +5,7 @@ As our website is a serverless architecture, this may cause the site to take lon
 We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 :::
 
-## Official Website
+## Project Website
 
 [lcda.space](https://www.lcda.space)
 

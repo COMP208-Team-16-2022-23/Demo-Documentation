@@ -62,9 +62,10 @@
    ### `venv`虚拟环境
 
    这个命令将在当前目录下创建一个虚拟环境。
-    ```bash
-    python -m venv .
-    ```
+   
+   ```bash
+   python -m venv .
+   ```
 
    激活虚拟环境
 
