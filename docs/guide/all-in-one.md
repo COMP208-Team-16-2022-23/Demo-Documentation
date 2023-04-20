@@ -1,4 +1,4 @@
-<h1>Low-Code Data Analysis User Manual</h1>
+<h1 >Low-Code Data Analysis User Manual</h1>
 
 **Author: 2022/23-COMP208-Team16**
 
@@ -637,7 +637,7 @@ Decision matrix (or CRITIC weighting method) is an objective weighting method. T
 
 ##### Example Case
 
-![decision_matrix](/images/data-analysis/decision_matrix.png)
+![decision_matrix](./images/data-analysis/decision_matrix.png)
 
 
 
@@ -654,7 +654,7 @@ A normality test is any statistical test for determining whether a data sample c
 
 ##### Example Case
 
- ![decision_matrix](/images/data-analysis/decision_matrix.png)
+ ![decision_matrix](./images/data-analysis/decision_matrix.png)
 
 
 
@@ -677,7 +677,7 @@ five answers, recorded as 5, 4, 3, 2, 1 respectively.
 
 ##### Example Case
 
-![realiability_test](/images/data-analysis/realiability_test.png)
+![realiability_test](./images/data-analysis/realiability_test.png)
 
 
 
@@ -697,7 +697,7 @@ unit root test.
 
 ##### Example Case
 
-![ADF_test](/images/data-analysis/ADF_test.png)
+![ADF_test](./images/data-analysis/ADF_test.png)
 
 
 
@@ -716,7 +716,7 @@ are consistent.
 
 ##### Example Case   
 
-![Bland_Altman](/images/data-analysis/Bland_Altman.png)
+![Bland_Altman](./images/data-analysis/Bland_Altman.png)
 
 
 
@@ -752,7 +752,7 @@ measure (e.g., distance functions).
 
 ##### Example Case   
 
-![k_nn](/images/data-analysis/k_nn.png)
+![k_nn](./images/data-analysis/k_nn.png)
 
 #### SVM classification
 
@@ -777,7 +777,7 @@ samples.
 
 ##### Example Case
 
-![svm](/images/data-analysis/svm.png)
+![svm](./images/data-analysis/svm.png)
 
 ### Decision Tree
 
@@ -810,7 +810,7 @@ A decision tree is a flowchart-like structure in which each internal node repres
 
 #### Example Case
 
-![decision_tree](/images/data-analysis/decision_tree.png)
+![decision_tree](./images/data-analysis/decision_tree.png)
 
 
 
