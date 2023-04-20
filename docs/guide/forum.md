@@ -92,7 +92,7 @@ to the LCDA team at [lcda.team.2023@gmail.com](mailto:lcda.team.2023@gmail.com) 
 
 ![Forum post](/images/forum/forum-random-text.jpeg)
 
-### Unfriendly Content
+### Profanity Content
 
 Test content:
 
