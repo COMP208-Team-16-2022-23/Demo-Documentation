@@ -806,7 +806,7 @@ A decision tree is a flowchart-like structure in which each internal node repres
     - If int, then consider `Min Samples Leaf` as the minimum number.
     - If float, then `Min Samples Leaf` is a fraction and `ceil(Min Samples Leaf* n_samples)` are the minimum number of samples for each node. .. versionchanged:: 0.18 Added float values for fractions.
   - Max Depth: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than `Min Samples Split` samples.
-  - Max leaf nodes: Grow a tree with `Max leaf nodes` in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
+  - Max Leaf Nodes: Grow a tree with `Max Leaf Nodes` in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
 
 ##### Example Case
 
