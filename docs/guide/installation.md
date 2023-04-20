@@ -135,7 +135,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    Do not worry, many cloud service providers offer users a certain amount of free trial quota. If LCDA is only used for
    testing, there will be no additional expenses.
 
-6. Configuring `/secret.py`
+6. Configure `/secret.py`
 
    Before you can deploy and run LCDA, you need to configure the `/secret.py` file with relevant information. This file
    contains sensitive information such as API keys, database passwords, and other secrets that are required for the

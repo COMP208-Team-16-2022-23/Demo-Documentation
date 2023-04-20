@@ -1,16 +1,21 @@
 # My Data
 
 My Data manages data files, allowing you to upload, preview and download data. The platform provides public
-datasets `iris.csv` and `ProgAssign.csv` for all users.
+datasets `ProgAssign.csv`, `iris.csv` and `wine.csv` for all users. You can also upload your own data files.
 
 ::: tip
-The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
-petal width, and variety. This dataset is sourced from
-the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris).
-
 The `ProgAssign.csv` dataset contains 514 student records, including grades for five courses and student programme.
 Please note that the data in the `ProgAssign.csv` dataset content is constructed by the LCDA team and does not represent
 real-world data.
+
+The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
+petal width, and variety. 
+
+The `wine.csv` dataset contains information on 178 wine samples, including alcohol, malic acid, ash, alcalinity of ash,
+magnesium, total phenols, flavanoids, nonflavanoid phenols, proanthocyanins, color intensity, hue, OD280/OD315 of
+diluted wines, and proline.
+ 
+The `iris.csv` and `wine.csv` datasets are sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 :::
 
 ## Upload File

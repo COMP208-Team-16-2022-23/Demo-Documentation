@@ -1,14 +1,20 @@
 # 我的数据
 
-我的数据对上传的数据文档进行管理，可以上传数据，预览数据详情，下载导出等。平台为所有用户提供公开数据集 `iris.csv`
-和 `ProgAssign.csv` 。
+我的数据管理数据文件，允许您上传、预览和下载数据。 该平台提供公共所有用户的数据集“ProgAssign.csv”、“iris.csv”和“wine.csv”。 您也可以上传自己的数据文件。
 
 ::: tip 提示
-`iris.csv` 数据集包含 150 条鸢尾花的数据，包括花萼长度、花萼宽度、花瓣长度、花瓣宽度和品种。 数据来源：[UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
- 
-`ProgAssign.csv` 数据集包含 514 条学生数据，包括5门课程的成绩和学生的专业。 数据内容为 LCDA 团队自行构造，不代表任何真实数据。
-:::
+`ProgAssign.csv` 数据集包含 514 条学生记录，包括五门课程和学生课程的成绩。
+请注意，`ProgAssign.csv` 数据集内容中的数据由 LCDA 团队构建，并不代表真实世界的数据。
 
+`iris.csv` 数据集包含 150 种鸢尾花的信息，包括萼片长度、萼片宽度、花瓣长度、
+花瓣宽度，种类繁多。
+
+`wine.csv` 数据集包含 178 个葡萄酒样本的信息，包括酒精度、苹果酸、灰分、灰分碱度、
+镁、总酚、类黄酮、非黄酮酚、原花青素、颜色强度、色调、OD280/OD315
+稀释的葡萄酒和脯氨酸。
+ 
+`iris.csv` 和 `wine.csv` 数据集来自 [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)。
+:::
 ## 上传文件
 
 登录后，点击 `Choose File` 后选择需要上传的文件，或者从文件夹中将文件拖入 `Select File` 选项框，点击 `Upload`

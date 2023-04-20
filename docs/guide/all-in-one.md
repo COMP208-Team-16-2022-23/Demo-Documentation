@@ -199,7 +199,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    Do not worry, many cloud service providers offer users a certain amount of free trial quota. If LCDA is only used for
    testing, there will be no additional expenses.
 
-6. Configuring `/secret.py`
+6. Configure `/secret.py`
 
    Before you can deploy and run LCDA, you need to configure the `/secret.py` file with relevant information. This file
    contains sensitive information such as API keys, database passwords, and other secrets that are required for the
@@ -342,15 +342,21 @@ You will also receive a confirmation email at the same time.
 # My Data
 
 My Data manages data files, allowing you to upload, preview and download data. The platform provides public
-datasets `iris.csv` and `ProgAssign.csv` for all users.
+datasets `ProgAssign.csv`, `iris.csv` and `wine.csv` for all users. You can also upload your own data files.
 
-> The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
-> petal width, and variety. This dataset is sourced from
-> the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris).
->
+
 > The `ProgAssign.csv` dataset contains 514 student records, including grades for five courses and student programme.
 > Please note that the data in the `ProgAssign.csv` dataset content is constructed by the LCDA team and does not represent
 > real-world data.
+> 
+> The `iris.csv` dataset contains information on 150 iris flowers, including sepal length, sepal width, petal length,
+> petal width, and variety. 
+> 
+> The `wine.csv` dataset contains information on 178 wine samples, including alcohol, malic acid, ash, alcalinity of ash,
+> magnesium, total phenols, flavanoids, nonflavanoid phenols, proanthocyanins, color intensity, hue, OD280/OD315 of
+> diluted wines, and proline.
+> 
+> The `iris.csv` and `wine.csv` datasets are sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
 
 ## Upload File
 
