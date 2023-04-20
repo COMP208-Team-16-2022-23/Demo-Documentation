@@ -624,15 +624,22 @@ This chapter will tell you how to analyze data with LCDA, with all the informati
 
 #### Comprehensive Evaluation
 
-##### CRITIC weighting method
+##### Decision Matrix
 
-The CRITIC weighting method is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, the CRITIC method eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
+Decision matrix (or CRITIC weighting method) is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, decision matrix eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
 
 ###### Input and Output
 
 - Input: at least two or more quantitative variables (can be positive or negative, but do not standardize)
 
 - Output: Enter the values of the weights corresponding to the quantitative variables
+
+
+###### Example Case
+
+![decision_matrix](/images/data-analysis/decision_matrix.png)
+
+
 
 #### Descriptive Statistics
 
@@ -644,6 +651,12 @@ A normality test is any statistical test for determining whether a data sample c
 
 - Input: One or more quantitative variables
 - Output: The results of the model test (with data satisfying/not satisfying a normal distribution)
+
+###### Example Case
+
+ ![decision_matrix](/images/data-analysis/decision_matrix.png)
+
+
 
 #### Questionnaire Analysis
 
@@ -662,6 +675,12 @@ five answers, recorded as 5, 4, 3, 2, 1 respectively.
   to be scale data
 - Output: Reliability of the reliability of the collection questionnaire scales
 
+###### Example Case
+
+![realiability_test](/images/data-analysis/realiability_test.png)
+
+
+
 #### Econometric Models
 
 ##### ADF Test
@@ -676,6 +695,12 @@ unit root test.
 - Input: 1 quantitative variable for time series data
 - Output: Sequence data is smoothed at several orders of differencing
 
+###### Example Case
+
+![ADF_test](/images/data-analysis/ADF_test.png)
+
+
+
 #### Medical Statistical Model
 
 ##### Bland-Altman Method
@@ -688,6 +713,12 @@ are consistent.
 
 - Input: Two quantitative variables representing the two methods
 - Output: Bland-Altman graph and whether there is consistency in the approach.
+
+###### Example Case   
+
+![Bland_Altman](/images/data-analysis/Bland_Altman.png)
+
+
 
 #### ML Classification
 
@@ -719,6 +750,10 @@ measure (e.g., distance functions).
   - Leaf Size: Leaf size passed to `BallTree` or `KDTree`. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem
   - P: Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used
 
+###### Example Case   
+
+![k_nn](/images/data-analysis/k_nn.png)
+
 ##### SVM classification
 
 Support vector machine (SVM) is a class of generalised linear classifiers that perform binary classification of data in
@@ -739,6 +774,10 @@ samples.
   - Kernel Algorithm: Specifies the kernel type to be used in the algorithm
   - Error Convergence Conditions: Tolerance for stopping criterion
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
+
+###### Example Case
+
+![svm](/images/data-analysis/svm.png)
 
 #### Decision Tree
 
@@ -771,7 +810,7 @@ A decision tree is a flowchart-like structure in which each internal node repres
 
 ##### Example Case
 
-![decision_tree](/images/data-analysis/decision_tree.png)
+![decision_tree](./images/data-analysis/decision_tree.png)
 
 
 

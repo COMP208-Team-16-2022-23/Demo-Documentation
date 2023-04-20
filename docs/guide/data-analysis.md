@@ -42,7 +42,7 @@ A normality test is any statistical test for determining whether a data sample c
 
 ##### Example Case
 
-   ![realiability_test](/images/data-analysis/realiability_test.png)
+   ![normality_test](/images/data-analysis/normality_test.png)
 
 ### Comprehensive Evaluation
 
