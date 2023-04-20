@@ -1,4 +1,4 @@
-# Low-Code Data Analysis User Manual
+<h1>Low-Code Data Analysis User Manual</h1>
 
 **Author: 2022/23-COMP208-Team16**
 
@@ -16,13 +16,13 @@ This user manual is also available online at [guide.lcda.space](http://guide.lcd
 > As our website is a serverless architecture, this may cause the site to take longer to load.
 > We apologise for any inconvenience this may cause you and ask for your patience and understanding.
 
-## Table of Contents
+**Table of Contents**
 
 [TOC]
 
 
 
-## Introduction
+# Introduction
 
 Low-Code Data Analysis (LCDA) is a tool designed to simplify data analysis by minimizing programming requirements. With
 LCDA, users can analyze large data sets quickly and easily, without the need for writing complex code. The platform
@@ -38,7 +38,7 @@ less intimidating for beginners, the team decided to create a website that allow
 without having to install any software. Currently, the platform is in the demo stage and is continuously being improved
 to provide a better user experience.
 
-### How It Works
+## How It Works
 
 LCDA is a Python-based web application that is built using [Flask](https://flask.palletsprojects.com/en/latest/), making
 it easily accessible to users through their web browser. Python was chosen as the programming language for this project
@@ -50,16 +50,16 @@ platform uses SSL encryption to secure user data during transmission and uses a 
 unauthorized access. Additionally, the platform is regularly updated with the latest security patches to ensure that
 users are protected against any potential vulnerabilities.
 
-### Why Not ...?
+## Why Not ...?
 
-#### SPSS Statistics
+### SPSS Statistics
 
 SPSS is a widely used data analysis software with an excellent set of products. While SPSS can perform far more
 specialized functions than LCDA, it requires a fee for usage, and its interface can be complex, making it challenging
 for beginners to use. In contrast, LCDA prioritizes user-friendly design and intuitive functionality, making it easy for
 beginners to get started with data analysis.
 
-#### Python
+### Python
 
 Python is a popular programming language for artificial intelligence and data science, and its open-source nature makes
 it easily accessible. However, for beginners who are unfamiliar with programming, installing and using a large number of
@@ -72,9 +72,9 @@ Compared to SPSS and Python, LCDA offers an easy-to-use platform that combines t
 low-code solution that simplifies data analysis without sacrificing functionality, making it an ideal choice for
 beginners, data scientists, business analysts, and anyone looking to derive insights from data with ease.
 
-## Installation and Deployment Guide
+# Installation and Deployment Guide
 
-### Before Starting the Installation
+## Before Starting the Installation
 
 The quickest way to use LCDA is to directly visit the [official website of LCDA](https://www.lcda.space/).
 
@@ -85,7 +85,7 @@ and a publicly accessible database such as [Amazon RDS](https://aws.amazon.com/r
 Please note that deploying LCDA in the cloud requires a certain level of technical expertise, and it is recommended that
 you have experience with cloud services before attempting to deploy LCDA on your own.
 
-### Prerequisites
+## Prerequisites
 
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
   or [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
@@ -100,7 +100,7 @@ you have experience with cloud services before attempting to deploy LCDA on your
 
 - [Amazon RDS](https://aws.amazon.com/rds/)
 
-### Installation and Deployment Steps
+## Installation and Deployment Steps
 
 This section will help you step by step from scratch to deploying the LCDA platform.
 
@@ -207,7 +207,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
    The following is an example of configuring `/secret.py`:
 
-      ```python
+   ```python
    from datetime import timedelta
    
    # DOMAIN
@@ -239,7 +239,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
        # Your service account key, in json format.
    }
    BUCKET_NAME = 'Your Google Cloud Storage bucket name'
-      ```
+   ```
 
 7. Deploy LCDA locally
 
@@ -271,7 +271,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
 You're done! Now you can visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to
 access LCDA.
 
-## Authentication of Users
+# Authentication of Users
 
 User authentication is an important part of our platform. To ensure that no user data is lost, most functions require a
 login. By registering, we ensure that your data is kept private and that you give your informed consent to our terms and
@@ -280,7 +280,7 @@ policies.
 > Note: You may not receive the expected email. If this is the case, please check that your email address is valid and
 > check the spam folder of your mailbox. In some cases, you need to contact your email provider.
 
-### Login
+## Login
 
 To access the platform, users must first authenticate themselves through the login process.
 
@@ -296,7 +296,7 @@ To login, follow these steps:
    If the email address and password match what we have on record,
    you will be redirected to 'My Data' page or the page that requires login.
 
-### Registration
+## Registration
 
 To use our platform, you must first register an account.
 
@@ -315,7 +315,7 @@ To register, follow these steps:
 
 Once verified, you will be redirected to the login page. You will also receive a welcome email.
 
-### Password Reset
+## Password Reset
 
 ![Forgot password](./images/auth/forgot.png)
 
@@ -339,7 +339,7 @@ If the password reset is successful, you will be redirected to the login page
 with a message indicating the success of the password reset.
 You will also receive a confirmation email at the same time.
 
-## My Data
+# My Data
 
 My Data manages data files, allowing you to upload, preview and download data. The platform provides public
 datasets `iris.csv` and `ProgAssign.csv` for all users.
@@ -352,7 +352,7 @@ datasets `iris.csv` and `ProgAssign.csv` for all users.
 > Please note that the data in the `ProgAssign.csv` dataset content is constructed by the LCDA team and does not represent
 > real-world data.
 
-### Upload File
+## Upload File
 
 Once logged in, click `Choose File` and select the file you need to upload, or drag the file from the folder into
 the `Select File` option box. Click `Upload` after choosing the file, then you can see the files you have uploaded in
@@ -364,7 +364,7 @@ the file list below.
 
 ![my_data_upload](./images/my-data/my_data_file.png)
 
-### File Actions
+## File Actions
 
 In the file list, you can preview, download and delete files.
 
@@ -379,7 +379,7 @@ In the file list, you can preview, download and delete files.
 ![my_data_action](./images/my-data/my_data_action.png)
 
 
-## Data Processing
+# Data Processing
 
 Data processing is a crucial step in analyzing experimental data using LCDA. Data collected from experiments may contain
 various issues, such as noise, skewness, and outliers, which may affect the accuracy and reliability of the results.
@@ -388,9 +388,9 @@ Therefore, it is important to process the data before analysis.
 This chapter will guide you through the steps of data processing. Whether you are a novice or an experienced user, this
 chapter provides valuable information and guidance to help you obtain accurate and reliable results using LCDA.
 
-### Data Processing Projects
+## Data Processing Projects
 
-#### Create a new project
+### Create a new project
 
 Before beginning data processing in LCDA, you will need to create a new data processing project. This can be done by
 clicking on the `NEW PROCESSING` button located in the upper right corner of the `Data Processing` interface.
@@ -406,7 +406,7 @@ Here we use the `iris.csv` dataset to demonstrate the process of data processing
 
 ![](./images/data-processing/data-processing-new-processing.jpg)
 
-#### Continue editing a project
+### Continue editing a project
 
 If you have already created a data processing project, the data processing interface will list all of your data
 processing projects. You can click on the `EDIT` button on the right to continue editing an existing data processing
@@ -414,7 +414,7 @@ project.
 
 ![](./images/data-processing/data-processing-index-edit.jpg)
 
-#### Delete a project
+### Delete a project
 
 If you no longer need a data processing project, you can click on the `DELETE` button on the right to delete the
 project.
@@ -425,7 +425,7 @@ project.
 
 ![](./images/data-processing/data-processing-index-delete.jpg)
 
-### Data Processing Steps
+## Data Processing Steps
 
 1. After clicking the `EDIT` button or creating a new data processing project, the data processing interface is
    displayed. From here, you can work with the data.
@@ -455,11 +455,11 @@ project.
 
    ![](./images/data-processing/data-processing-my-data-result.jpg)
 
-### Data Processing Algorithms
+## Data Processing Algorithms
 
-#### Outlier Handling
+### Outlier Handling
 
-##### Description
+#### Description
 
 Outlier handling algorithms are used to identify and handle outliers in a dataset. In statistics, an outlier is a data
 point that significantly differs from other observations, and may be caused by experimental error or other factors.
@@ -470,7 +470,7 @@ results.
 
 > [Outlier - Wikipedia](https://en.wikipedia.org/wiki/Outlier)
 
-##### Parameters
+#### Parameters
 
 - `Detection method`: Outlier detection method. currently supported
   [3-sigma](https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule), [IQR](https://en.wikipedia.org/wiki/Interquartile_range),
@@ -478,9 +478,9 @@ results.
 - `Processing method`: Outlier processing method. Currently supports `set to null`, `set to mean`, and `set to median`
   three methods.
 
-#### Missing Value Handling
+### Missing Value Handling
 
-##### Description
+#### Description
 
 Missing data can result in biased or inaccurate results if not handled properly. Missing value handling algorithms can
 be used to impute the missing data with reasonable estimates, based on statistical methods such as mean imputation,
@@ -488,15 +488,15 @@ median imputation. These methods can help to reduce the bias and improve the acc
 
 > [Missing data - Wikipedia](https://en.wikipedia.org/wiki/Missing_data)
 
-##### Parameters
+#### Parameters
 
 - `identification method`: Missing value detection method. Currently supports `empty`, `space`, `None` and `Non-numeric`
   four methods.
 - `filling method`: missing value processing method. Currently supports `mean`, `median`, and `mode` three methods.
 
-#### Tail Shrinkage and Truncation Processing
+### Tail Shrinkage and Truncation Processing
 
-##### Description
+#### Description
 
 Tail shrinkage and truncation processing algorithms are used to shrink the tails of a distribution. This can be useful
 when the tails of a distribution are too long, which can cause problems in statistical analysis. These algorithms can
@@ -507,7 +507,7 @@ help to reduce the bias and improve the accuracy of statistical analysis.
 >
 > [Shrinkage (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
 
-##### Parameters
+#### Parameters
 
 - `method_selection`: Tail shrinkage and truncation processing method. Currently supports `tail_shrinkage`
   and `tail_truncation` two methods.
@@ -516,9 +516,9 @@ help to reduce the bias and improve the accuracy of statistical analysis.
 - `processing_method`: Tail shrinkage and truncation processing method. Currently supports `delete_value`
   and `delete_row` two methods.
 
-#### Data Transformation
+### Data Transformation
 
-##### Description
+#### Description
 
 In statistics, data transformation is the application of a deterministic mathematical function to each point in a data
 set—that is, each data point z is replaced with the transformed value y = f(z), where f is a function. Transforms are
@@ -527,14 +527,14 @@ is to be applied, or to improve the interpretability or appearance of graphs.
 
 > [Data transformation (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Data_transformation_(statistics))
 
-##### Parameters
+#### Parameters
 
 - `transform_method`: Data conversion method. Currently, [FFT](https://en.wikipedia.org/wiki/Fast_Fourier_transform) and
   IFFT (Inverse Fast Fourier Transform) are supported.
 
-#### Dimension Reduction
+### Dimension Reduction
 
-##### Description
+#### Description
 
 Data dimensionality reduction is the process of reducing the number of dimensions or variables in a high-dimensional
 dataset, while retaining the essential information. The aim is to simplify the dataset and eliminate the irrelevant or
@@ -545,16 +545,16 @@ overfitting.
 
 > [Dimensionality reduction - Wikipedia](https://en.wikipedia.org/wiki/Dimensionality_reduction)
 
-##### Parameters
+#### Parameters
 
 - `method`: Dimensionality reduction method. Currently
   supports [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis)
   and [LDA](https://en.wikipedia.org/wiki/Linear_discriminant_analysis) two methods.
 - `n_components`: Number of components to keep. Data types are numeric.
 
-#### Sample Balancing
+### Sample Balancing
 
-##### Description
+#### Description
 
 Sample balance refers to the process of adjusting the number of samples in each category of a dataset so that they are
 more evenly distributed. This is important in machine learning and statistical analysis because imbalanced datasets can
@@ -563,7 +563,7 @@ improve the performance and accuracy of the algorithms that use the dataset.
 
 > [Oversampling and undersampling in data analysis - Wikipedia](https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis)
 
-##### Parameters
+#### Parameters
 
 - `balancing_method`: Sample balancing method. Currently
   supports `undersample` ([RandomUnderSampler](https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.RandomUnderSampler.html)),
@@ -571,28 +571,28 @@ improve the performance and accuracy of the algorithms that use the dataset.
   and `combined` （[SMOTEENN](https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTEENN.html))
   three methods.
 
-#### Normalization
+### Normalization
 
-##### Description
+#### Description
 
 The purpose of standardization is to make the dataset easier to compare and analyze. Standardization also helps to
 remove the units of measurement from the data, making it possible to compare variables that have different units.
 
 > [Normalization (statistics) - Wikipedia](https://en.wikipedia.org/wiki/Normalization_(statistics))
 
-##### Parameters
+#### Parameters
 
 - `Method`: Normalization method. Currently supports [Min_Max](https://en.wikipedia.org/wiki/Feature_scaling) and
   [Z_Score](https://en.wikipedia.org/wiki/Standard_score) two methods.
 
-## Data Analysis
+# Data Analysis
 
 Data Analysis helps you to analyze your data on top of [Data Processing](#data-processing). Data Analysis provides
 various algorithms and models used in economics, medicine, social science and Machine Learning, etc.
 
 This chapter will tell you how to analyze data with LCDA, with all the information about the algorithms we provide.
 
-### Analysis Steps
+## Analysis Steps
 
 1. Click on `Data Analysis` in the navigation bar above to go to the data analysis page.
 
@@ -620,47 +620,47 @@ This chapter will tell you how to analyze data with LCDA, with all the informati
 
 5. The `Print` button on the top right of the report provides a full screen view and download of the report.
 
-### Algorithms
+## Algorithms
 
-#### Comprehensive Evaluation
+### Comprehensive Evaluation
 
-##### Decision Matrix
+#### Decision Matrix
 
 Decision matrix (or CRITIC weighting method) is an objective weighting method. The idea is to use two indicators, which are contrast intensity and conflictiveness. Contrast intensity is expressed by standard deviation, if the standard deviation of the data is larger, it means more fluctuation, and the weight will be higher; conflict is expressed by correlation coefficient, if the value of correlation coefficient between indicators is larger, it means less conflict, and then its weight will be lower. For the comprehensive evaluation of multiple indicators and multiple objects, decision matrix eliminates the influence of some indicators with strong correlation and reduces the overlap of information between indicators, which is more conducive to obtaining credible evaluation results.
 
-###### Input and Output
+##### Input and Output
 
 - Input: at least two or more quantitative variables (can be positive or negative, but do not standardize)
 
 - Output: Enter the values of the weights corresponding to the quantitative variables
 
 
-###### Example Case
+##### Example Case
 
 ![decision_matrix](/images/data-analysis/decision_matrix.png)
 
 
 
-#### Descriptive Statistics
+### Descriptive Statistics
 
-##### Normality Test
+#### Normality Test
 
 A normality test is any statistical test for determining whether a data sample comes from a normal distribution.
 
-###### Input and Output
+##### Input and Output
 
 - Input: One or more quantitative variables
 - Output: The results of the model test (with data satisfying/not satisfying a normal distribution)
 
-###### Example Case
+##### Example Case
 
  ![decision_matrix](/images/data-analysis/decision_matrix.png)
 
 
 
-#### Questionnaire Analysis
+### Questionnaire Analysis
 
-##### Reliability Analysis
+#### Reliability Analysis
 
 Reliability analysis is mainly used to examine the stability and consistency of the results measured by the scale in the
 questionnaire, that is, to test whether the scale samples in the questionnaire are reliable and credible. The scale
@@ -669,71 +669,71 @@ mobile phones has changed from very fond of to dislike. The most famous scale in
 The options of this scale are mainly divided into "strongly agree", "agree", "not sure", "disagree", "very disagree"
 five answers, recorded as 5, 4, 3, 2, 1 respectively.
 
-###### Input and Output
+##### Input and Output
 
 - Input: At least two or more quantitative variables or ordered fixed categories of variables, generally requiring data
   to be scale data
 - Output: Reliability of the reliability of the collection questionnaire scales
 
-###### Example Case
+##### Example Case
 
 ![realiability_test](/images/data-analysis/realiability_test.png)
 
 
 
-#### Econometric Models
+### Econometric Models
 
-##### ADF Test
+#### ADF Test
 
 When using many time series models, such as ARMA and ARIMA, the time series is required to be stationary, so generally
 when studying a period of time series, the first step is to perform a stationarity test. In addition to the method of
 visual inspection, in addition The more commonly used strict statistical test method is the ADF test, also known as the
 unit root test.
 
-###### Input and Output
+##### Input and Output
 
 - Input: 1 quantitative variable for time series data
 - Output: Sequence data is smoothed at several orders of differencing
 
-###### Example Case
+##### Example Case
 
 ![ADF_test](/images/data-analysis/ADF_test.png)
 
 
 
-#### Medical Statistical Model
+### Medical Statistical Model
 
-##### Bland-Altman Method
+#### Bland-Altman Method
 
 A method for visual consistency checking. Its principle is an intuitive method to draw graphs using the difference, mean
 and 95% consistency (LoA) of the results of the two methods, so as to determine whether the results of the two methods
 are consistent.
 
-###### Input and Output
+##### Input and Output
 
 - Input: Two quantitative variables representing the two methods
 - Output: Bland-Altman graph and whether there is consistency in the approach.
 
-###### Example Case   
+##### Example Case   
 
 ![Bland_Altman](/images/data-analysis/Bland_Altman.png)
 
 
 
-#### ML Classification
+### ML Classification
 
-##### K-Nearest Neighbors
+#### K-Nearest Neighbors
 
 K-Nearest Neighbors is a simple algorithm that stores all available cases and classifies new cases based on a similarity
 measure (e.g., distance functions).
 
-###### Input and Output
+##### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed
   variable. <!--content here need check-->
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
-###### Parameter Options
+##### Parameter Options
 
   - Data Shuffling: Whether to shuffle data randomly
   - Training Ratio: Ratio of training data to the whole dataset
@@ -750,22 +750,22 @@ measure (e.g., distance functions).
   - Leaf Size: Leaf size passed to `BallTree` or `KDTree`. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem
   - P: Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used
 
-###### Example Case   
+##### Example Case   
 
 ![k_nn](/images/data-analysis/k_nn.png)
 
-##### SVM classification
+#### SVM classification
 
 Support vector machine (SVM) is a class of generalised linear classifiers that perform binary classification of data in
 a supervised learning fashion, with a decision boundary that is a maximum margin hyperplane solved for the learned
 samples.
 
-###### Input and Output
+##### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
-###### Parameter Options
+##### Parameter Options
 
   - Data Shuffling: Whether to shuffle data randomly
   - Training Ratio: Ratio of training data to the whole dataset
@@ -775,20 +775,20 @@ samples.
   - Error Convergence Conditions: Tolerance for stopping criterion
   - Maximum Number of Iterations: Hard limit on iterations within solver, or -1 for no limit
 
-###### Example Case
+##### Example Case
 
 ![svm](/images/data-analysis/svm.png)
 
-#### Decision Tree
+### Decision Tree
 
 A decision tree is a flowchart-like structure in which each internal node represents a test on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
 
-##### Input and Output
+#### Input and Output
 
 - Input: The variables as features are fixed or quantitative variables, and the variable as target is a fixed variable.
 - Output: The classification results of the model and the evaluation effect of the model classification.
 
-##### Parameter Options
+#### Parameter Options
 
   - Data Shuffling: Whether to shuffle data randomly
   - Training Ratio: Ratio of training data to the whole dataset
@@ -808,13 +808,13 @@ A decision tree is a flowchart-like structure in which each internal node repres
   - Max Depth: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than `Min Samples Split` samples.
   - Max Leaf Nodes: Grow a tree with `Max Leaf Nodes` in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
 
-##### Example Case
+#### Example Case
 
 ![decision_tree](/images/data-analysis/decision_tree.png)
 
 
 
-## Forum
+# Forum
 
 The LCDA forum is a platform designed to promote user-friendly communication. Users are encouraged to post questions and
 comments, which can be answered and discussed by other users.
@@ -832,7 +832,7 @@ LCDA reserves the right to review all content posted in the forum. If any conten
 [LCDA Terms & Conditions](https://www.lcda.space/legal/terms#ugc), LCDA reserves the right to delete the
 content without prior notice.
 
-### Interface
+## Interface
 
 When you visit a forum page, you can view all posts and their corresponding comments. Each post has a title, author,
 release time, modification time, and content. You can also see the comments of each post.
@@ -843,7 +843,7 @@ If a post or comment has been modified after it was initially created, its modif
 
 ![Forum index page](./images/forum/forum-index.jpeg)
 
-### Post
+## Post
 
 After logging in, you can create a new post by clicking the "New Post" button located at the bottom right corner of the
 forum page.
@@ -855,7 +855,7 @@ simply click on the `SUBMIT` button to publish your post.
 
 ![Forum post](./images/forum/forum-new-post.jpeg)
 
-### Comment
+## Comment
 
 After logging in, you can write comments below the body of all posts on the main forum page. To do so, simply enter your
 comment in the provided text box. Once you have finished writing your comment,click the `SUBMIT` button to post it.
@@ -865,7 +865,7 @@ Additionally, once a comment is published, it cannot be edited.**
 
 ![Forum post](./images/forum/forum-new-comment.jpg)
 
-### Edit Post
+## Edit Post
 
 When you are logged in, you can edit your own posts on the main forum page by clicking the `EDIT` button to the right of
 the post. This will allow you to modify the title and body of the post.
@@ -881,7 +881,7 @@ Additionally, once a post is deleted, all comments associated with the post will
 
 ![Forum post](./images/forum/forum-edit.jpeg)
 
-### Delete Comment
+## Delete Comment
 
 When you are logged in, a `DELETE` button will appear to the right of each comment that you have posted on the main
 forum page. Clicking on the `DELETE` button will allow you to delete the comment.
@@ -891,20 +891,20 @@ forum page. Clicking on the `DELETE` button will allow you to delete the comment
 
 ![Forum post](./images/forum/forum-delete-comment-button.jpg)
 
-### Violations
+## Violations
 
 Below are some examples of posts that violate the forum rules. If you come across any such content, please report it
 to the LCDA team at [lcda.team.2023@gmail.com](mailto:lcda.team.2023@gmail.com) immediately.
 
-#### Non-English Content
+### Non-English Content
 
 ![Forum post](./images/forum/forum-other-language.jpeg)
 
-#### Meaningless Content
+### Meaningless Content
 
 ![Forum post](./images/forum/forum-random-text.jpeg)
 
-#### Unfriendly Content
+### Unfriendly Content
 
 Test content:
 
@@ -914,12 +914,12 @@ Filtered content:
 
 ![Forum post](./images/forum/forum-swear-word-post.jpeg)
 
-## Node Editor
+# Node Editor
 
 Node Editor is a fully graphical data processing tool. Here you can apply multiple data processing methods to multiple
 datasets on a single page at the same time.
 
-### How to Use
+## How to Use
 
 1. Once logged in, click on **Node Editor** from the top navigation bar to access the node editor
    interface.<!--can add link-->
@@ -961,9 +961,9 @@ datasets on a single page at the same time.
 
     ![process_2step](./images/node-editor/process_2step.png)
 
-### List of Nodes
+## List of Nodes
 
-#### Data Nodes
+### Data Nodes
 
 - Data Node
 
@@ -977,7 +977,7 @@ datasets on a single page at the same time.
   columns in the received dataset. The input field below the display row is used to select the columns you want to
   output for processing, and column names are separated by commas.
 
-#### Output Nodes
+### Output Nodes
 
 An output node is a node that only has an input interface but no output interface. In the node editor, a process 
 **must** contain **at least one** output node to activate the process. 
@@ -1002,7 +1002,7 @@ Otherwise, **any** calculations or operations in the flow will not be effective.
 > the current process or branch has failed. If you have done the above operation, you need to create a new node in the
 > node editor to refresh the display.
 
-#### Processing Nodes
+### Processing Nodes
 
 The current Node Editor contains 7 processing nodes, which have the same processing methods as those in Data Processing,
 and each node is named after a data processing method. Each processing node will include:
