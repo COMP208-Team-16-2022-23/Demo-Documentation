@@ -111,7 +111,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
   conda activate COMP208
   ```
 
-5. Configuring Google Cloud
+5. Configure cloud services
 
    LCDA was originally designed to be deployed in the cloud. Therefore, configuring cloud services is an essential part
    of running LCDA smoothly. For each cloud service configuration tutorial, please refer to its official documentation,
