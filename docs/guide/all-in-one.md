@@ -90,6 +90,8 @@ you have experience with cloud services before attempting to deploy LCDA on your
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) v23.1.0+
   or [Anaconda](https://www.anaconda.com/products/distribution) v23.1.0+
 
+- [Python](https://www.python.org/) v3.7+ if you use `venv` virtual environment
+
 - [Git](https://git-scm.com/downloads) v2.30+
 
 - [Google Cloud Run](https://cloud.google.com/run)
@@ -123,9 +125,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
 
 4. Create and activate a Python virtual environment
 
-   You can choose either `venv` or `conda` to create a virtual environment.
-
-    You can choose either `venv` or `conda` to create a virtual environment.
+   You can choose `venv` or `conda` virtual environments
 
     > - `venv` environment is suitable for **short-term testing** and can be deleted along with the project folder without
       affecting the system environment.
@@ -169,7 +169,7 @@ This section will help you step by step from scratch to deploying the LCDA platf
    conda env create -f ./misc/environment.yml
    ```
 
-   Activate Conda virtual environment
+   Activate the virtual environment
 
    ```bash
    conda activate COMP208
