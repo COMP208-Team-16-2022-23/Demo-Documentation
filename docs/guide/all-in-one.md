@@ -810,7 +810,7 @@ A decision tree is a flowchart-like structure in which each internal node repres
 
 ##### Example Case
 
-![decision_tree](./images/data-analysis/decision_tree.png)
+![decision_tree](/images/data-analysis/decision_tree.png)
 
 
 
