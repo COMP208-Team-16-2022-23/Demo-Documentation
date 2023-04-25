@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/COMP208-Team-16-2022-23/Demo-Documentation/compare/v1.0.0...v1.1.0) (2023-04-25)
+
+
+### Features
+
+* add User Manual PDF download prompt ([70416cb](https://github.com/COMP208-Team-16-2022-23/Demo-Documentation/commit/70416cb5d640f99d8b26ffdd91a95b6076e976d5))
+
 ## 1.0.0 (2023-04-21)
 
 
