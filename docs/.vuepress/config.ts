@@ -37,14 +37,21 @@ export default defineUserConfig({
     ],
 
     theme: defaultTheme({
+
+        navbar: [
+            {
+                text: 'PDF',
+                link: 'https://github.com/COMP208-Team-16-2022-23/Demo-Documentation/blob/main/all-in-one.pdf',
+            },
+        ],
+
         logo: '/images/hero.png',
         logoDark: '/images/hero-white.png',
         repo: 'COMP208-Team-16-2022-23/Group-Project-Code',
         docsRepo: 'COMP208-Team-16-2022-23/Demo-Documentation',
         docsBranch: 'main',
         docsDir: 'docs',
-        editLinkText: 'Edit this page on GitHub',
-        editLinkPattern: ':repo/edit/:branch/:path',
+        editLink: false,
         locales: {
             '/': {
                 selectLanguageName: 'English',

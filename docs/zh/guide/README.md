@@ -1,3 +1,6 @@
+
+你可以在[这里](https://github.com/COMP208-Team-16-2022-23/Demo-Documentation/blob/main/all-in-one.pdf)下载用户手册的PDF。
+
 # 简介
 
 ::: tip 注意

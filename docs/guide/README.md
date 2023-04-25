@@ -1,3 +1,6 @@
+
+You can download the user manual as a PDF [here](https://github.com/COMP208-Team-16-2022-23/Demo-Documentation/blob/main/all-in-one.pdf).
+
 # Introduction
 
 ::: tip
